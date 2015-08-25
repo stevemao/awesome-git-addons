@@ -10,9 +10,15 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Extras](#git-extras)
 
 
-## [git-extras](https://github.com/tj/git-extras) - Little git extras.
+## [Git Extras](https://github.com/tj/git-extras) - Little git extras.
 
 ### squash
+
+```
+$ git squash fixed-cursor-styling "Fixed cursor styling"
+$ git squash 95b7c52
+$ git squash HEAD~3
+```
 
 ### summary
 
@@ -27,11 +33,6 @@ $ git summary
  authors  :
  15401	Junio C Hamano                  38.0%
   1844	Jeff King                       4.5%
-  1400	Shawn O. Pearce                 3.5%
-  1109	Linus Torvalds                  2.7%
-   819	Nguyễn Thái Ngọc Duy            2.0%
-   769	Johannes Schindelin             1.9%
-   762	Jonathan Nieder                 1.9%
 ```
 
 ### line-summary
@@ -44,13 +45,6 @@ $ git line-summary
  authors  :
  1040 Contra                    26.7%
   828 Sindre Sorhus             21.2%
-  289 Rob Richardson            7.4%
-  198 Blaine Bublitz            5.1%
-  134 Eric Schoffstall          3.4%
-  128 Dmitry Mazuro             3.3%
-  109 Joel Kemp                 2.8%
-   87 Vsevolod Strukchinsky     2.2%
-   78 Terin Stock               2.0%
 ```
 
 ### effort
@@ -63,12 +57,6 @@ $ git effort
   .gitattributes............................... 3          3
   .gitignore................................... 265        226
   .mailmap..................................... 47         40
-  COPYING...................................... 2          2
-  Documentation/.gitattributes................. 1          1
-  Documentation/.gitignore..................... 12         12
-  Documentation/CodingGuidelines............... 55         45
-  Documentation/Makefile....................... 178        144
-  Documentation/RelNotes/1.5.0.1.txt........... 1          1
 ```
 
 ### authors
@@ -78,11 +66,6 @@ $ git authors
 Contra <contra@maricopa.edu>
 Eric Schoffstall <contra@wearefractal.com>
 Sindre Sorhus <sindresorhus@gmail.com>
-Blaine Bublitz <blaine@iceddev.com>
-Rob Richardson <robrich@robrich.org>
-Eric Schoffstall <contra@maricopa.edu>
-contra <contra@maricopa.edu>
-Tyler Kellen <tyler@sleekcode.net>
 ```
 
 ### changelog
@@ -109,8 +92,9 @@ $ git changelog
 ### commits-since
 
 ```
-$ git commits-since
-... commits since last week
+$ git commits-since yesterday
+... changes since yesterday
+TJ Holowaychuk - Fixed readme
 ```
 
 ### count
@@ -122,73 +106,302 @@ total 855
 
 ### create-branch
 
+```
+$ git create-branch development
+```
+
 ### delete-branch
+
+```
+$ git delete-branch integration
+```
 
 ### delete-submodule
 
+```
+$ git delete-submodule lib/foo
+```
+
 ### delete-tag
+
+```
+$ git delete-tag 0.0.1
+```
 
 ### delete-merged-branches
 
+```
+$ git delete-merged-branches
+Deleted feature/themes (was c029ab3).
+Deleted feature/live_preview (was a81b002).
+Deleted feature/dashboard (was 923befa).
+```
+
 ### fresh-branch
+
+```
+$ git fresh-branch docs
+```
 
 ### guilt
 
+```
+$ git guilt `git log --until="3 weeks ago" --format="%H" -n 1` HEAD
+Paul Schreiber                +++++++++++++++++++++++++++++++++++++++++++++(349)
+spacewander                   +++++++++++++++++++++++++++++++++++++++++++++(113)
+Mark Eissler                  ++++++++++++++++++++++++++
+```
+
 ### merge-into
+
+```
+$ git merge-into master
+```
 
 ### graft
 
+```
+$ git graft new_feature master
+```
+
 ### alias
+
+```
+$ git alias last "cat-file commit HEAD"
+$ git alias
+last = cat-file commit HEAD
+```
 
 ### ignore
 
+```
+$ git ignore build "*.o" "*.log"
+... added 'build'
+... added '*.o'
+... added '*.log'
+```
+
 ### info
+
+```
+$ git info
+
+    ## Remote URLs:
+
+    origin              git@github.com:sampleAuthor/git-extras.git (fetch)
+    origin              git@github.com:sampleAuthor/git-extras.git (push)
+
+    ## Remote Branches:
+
+    origin/HEAD -> origin/master
+    origin/myBranch
+
+    ## Local Branches:
+
+    myBranch
+    * master
+
+    ## Most Recent Commit:
+
+    commit e3952df2c172c6f3eb533d8d0b1a6c77250769a7
+    Author: Sample Author <sampleAuthor@gmail.com>
+
+    Added git-info command.
+
+    Type 'git log' for more commits, or 'git show <commit id>' for full commit details.
+
+    ## Configuration (.git/config):
+
+    color.diff=auto
+    color.status=auto
+```
 
 ### fork
 
+```
+$ git fork LearnBoost/expect.js
+```
+
 ### release
+
+```
+$ git release 0.1.0
+```
 
 ### contrib
 
+```
+$ git contrib visionmedia
+visionmedia (18):
+  Export STATUS_CODES
+  Replaced several Array.prototype.slice.call() calls with Array.prototype.unshift.call()
+  Moved help msg to node-repl
+```
+
 ### repl
+
+```
+$ git repl
+
+git> ls-files
+History.md
+Makefile
+```
 
 ### undo
 
+```
+$ git undo
+```
+
 ### gh-pages
+
+```
+$ git gh-pages
+```
 
 ### scp
 
+```
+$ git scp staging HEAD
+```
+
 ### setup
+
+```
+$ git setup
+```
 
 ### touch
 
+```
+$ git touch index.js
+```
+
 ### obliterate
+
+```
+$ git obliterate secrets.json
+```
 
 ### feature|refactor|bug|chore
 
+```
+$ git feature dependencies
+$ git feature finish dependencies
+```
+
 ### local-commits
+
+```
+$ git local-commits
+commit 5f00a3c1bb71876ebdca059fac96b7185dea5467
+Merge: 7ad3ef9 841af4e
+Author: Blaine Bublitz <blaine@iceddev.com>
+Date:   Thu Aug 20 11:35:15 2015 -0700
+
+    Merge pull request #1211 from JimiHFord/patch-1
+
+    Update guidelines.md
+
+commit 841af4ee7aaf55b505354d0e86d7fb876d745e26
+Author: Jimi Ford <JimiHFord@users.noreply.github.com>
+Date:   Thu Aug 20 11:55:38 2015 -0400
+
+    Update guidelines.md
+
+    fixed typo
+```
 
 ### archive-file
 
+```
+$ git archive-file
+Building archive on branch "master"
+Saved to "gulp.v3.9.0-36-g47cb6b0.zip" ( 60K)
+```
+
 ### missing
+
+```
+$ git missing master
+< d14b8f0 only on current checked out branch
+> 97ef387 only on master
+```
 
 ### lock
 
+```
+$ git lock config/database.yml
+```
+
 ### locked
+
+```
+$ git locked
+config/database.yml
+```
 
 ### unlock
 
+```
+$ git unlock config/database.yml
+```
+
 ### reset-file
+
+```
+$ git reset-file README.md HEAD^
+Reset 'README.md' to HEAD^
+```
 
 ### pr
 
+```
+$ git pr 226
+From https://github.com/tj/git-extras
+ * [new ref]       refs/pulls/226/head -> pr/226
+Switched to branch 'pr/226'
+```
+
 ### root
+
+```
+$ git root
+/GitHub/git
+```
 
 ### delta
 
+```
+$ git delta
+README.md
+```
+
 ### merge-repo
 
+```
+$ git merge-repo git@github.com:tj/git-extras.git master .
+git fetch git@github.com:tj/git-extras.git master
+warning: no common commits
+remote: Counting objects: 3507, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 3507 (delta 1), reused 0 (delta 0), pack-reused 3502
+Receiving objects: 100% (3507/3507), 821.12 KiB | 286.00 KiB/s, done.
+Resolving deltas: 100% (1986/1986), done.
+From github.com:tj/git-extras
+ * branch            master     -> FETCH_HEAD
+Added dir 'git-merge-repo.E95m0gj'
+No local changes to save
+```
+
 ### psykorebase
+
+```
+$ git psykorebase master
+$ git psykorebase --continue
+$ git psykorebase master feature
+```
 
 
 ## [gitflow](https://github.com/nvie/gitflow) - git extensions to provide high-level repository operations for Vincent Driessen's branching model.
