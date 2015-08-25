@@ -36,6 +36,23 @@ $ git summary
 
 ### line-summary
 
+```
+$ git line-summary
+
+ project  : gulp
+ lines    : 3900
+ authors  :
+ 1040 Contra                    26.7%
+  828 Sindre Sorhus             21.2%
+  289 Rob Richardson            7.4%
+  198 Blaine Bublitz            5.1%
+  134 Eric Schoffstall          3.4%
+  128 Dmitry Mazuro             3.3%
+  109 Joel Kemp                 2.8%
+   87 Vsevolod Strukchinsky     2.2%
+   78 Terin Stock               2.0%
+```
+
 ### effort
 
 ```
