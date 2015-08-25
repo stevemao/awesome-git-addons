@@ -21,7 +21,6 @@ Please ensure your pull request adheres to the following guidelines:
 - Additions should be added to the bottom of the relevant category.
 - New categories, or improvements to the existing categorization are welcome.
 - Keep descriptions short and simple, but descriptive.
-- Try not to mention `git` in the description as it's implied.
 - Start the description with a capital and end with a full stop/period.
 - Check your spelling and grammar.
 - Make sure your text editor is set to remove trailing whitespace.
