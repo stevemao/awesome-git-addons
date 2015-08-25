@@ -8,12 +8,13 @@ Please ensure your pull request adheres to the following guidelines:
 - Use the following format: 
 
 ```md
-    ## [package](link) - Description.
+    ## [package](link)
 
     ### command
 
     ```
     $ git command
+    What happens
     ```
 ```
 
