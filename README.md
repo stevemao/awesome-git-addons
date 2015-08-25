@@ -5,6 +5,11 @@ A curated list of addons that extends git.
 Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
 
+## Table of Contents
+
+- [Git Extras](#git-extras)
+
+
 ## [git-extras](https://github.com/tj/git-extras) - Little git extras.
 
 ### squash
