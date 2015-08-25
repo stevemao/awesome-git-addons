@@ -5,7 +5,18 @@ Please ensure your pull request adheres to the following guidelines:
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Suggested packages should be tested and documented.
 - Make an individual pull request for each suggestion.
-- Use the following format: `[package](link) - Description.`
+- Use the following format: 
+
+```md
+    ## [package](link) - Description.
+
+    ### command
+
+    ```
+    $ git command
+    ```
+```
+
 - Additions should be added to the bottom of the relevant category.
 - New categories, or improvements to the existing categorization are welcome.
 - Keep descriptions short and simple, but descriptive.
