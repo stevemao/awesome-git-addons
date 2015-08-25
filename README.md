@@ -7,7 +7,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
 ## Table of Contents
 
-- [Git Extras](#git-extras)
+- [Git Extras](#git-extras---little-git-extras)
 
 
 ## [Git Extras](https://github.com/tj/git-extras) - Little git extras.
