@@ -13,7 +13,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 ## Table of Contents
 
 - [Git Extras](#git-extras)
-- [git-flow](#gitflow)
+- [git-flow](#gitflow-avh-edition)
 
 
 ## [Git Extras](https://github.com/tj/git-extras)
@@ -418,7 +418,7 @@ $ git psykorebase master feature
 ```
 
 
-## [gitflow](https://github.com/nvie/gitflow)
+## [gitflow (AVH Edition)](https://github.com/petervanderdoes/gitflow)
 
 ### flow-init
 
@@ -462,9 +462,6 @@ Production and integration branches should differ.
 
 
 ## [git-crypt](https://github.com/AGWA/git-crypt)
-
-
-## [gitflow (AVH Edition)](https://github.com/petervanderdoes/gitflow)
 
 
 ## [git-hooks](https://github.com/icefox/git-hooks)
