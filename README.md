@@ -9,11 +9,11 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
 ## Table of Contents
 
-- [Git Extras](#git-extras---little-git-extras)
-- [git-flow](#gitflow---git-extensions-to-provide-high-level-repository-operations-for-vincent-driessens-branching-model)
+- [Git Extras](#git-extras)
+- [git-flow](#gitflow)
 
 
-## [Git Extras](https://github.com/tj/git-extras) - Little git extras.
+## [Git Extras](https://github.com/tj/git-extras)
 
 ### squash
 
@@ -415,7 +415,7 @@ $ git psykorebase master feature
 ```
 
 
-## [gitflow](https://github.com/nvie/gitflow) - git extensions to provide high-level repository operations for Vincent Driessen's branching model.
+## [gitflow](https://github.com/nvie/gitflow)
 
 ### flow-init
 
@@ -434,61 +434,61 @@ Production and integration branches should differ.
 ```
 
 
-## [git-up](https://github.com/aanand/git-up) - Fetch and rebase all locally-tracked remote branches.
+## [git-up](https://github.com/aanand/git-up)
 
 
-## [hub](https://github.com/github/hub) - Extend git with extra features and commands that make working with GitHub easier.
+## [hub](https://github.com/github/hub)
 
 
-## [git-deploy](https://github.com/mislav/git-deploy) - git deployment made easy.
+## [git-deploy](https://github.com/mislav/git-deploy)
 
 
-## [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt) - An informative and fancy bash prompt for Git users.
+## [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt)
 
 
-## [git-stree](https://github.com/tdd/git-stree) - A better git subtree helper command.
+## [git-stree](https://github.com/tdd/git-stree)
 
 
-## [git-subrepo](https://github.com/ingydotnet/git-subrepo) - git Submodule Alternative.
+## [git-subrepo](https://github.com/ingydotnet/git-subrepo)
 
 
-## [git-archive-all](https://github.com/Kentzo/git-archive-all) - A python script wrapper for git-archive that archives a git superproject and its submodules, if it has any.
+## [git-archive-all](https://github.com/Kentzo/git-archive-all)
 
 
-## [git-cal](https://github.com/k4rthik/git-cal) - Github like contributions calendar on terminal.
+## [git-cal](https://github.com/k4rthik/git-cal)
 
 
-## [git-crypt](https://github.com/AGWA/git-crypt) - Transparent file encryption in git.
+## [git-crypt](https://github.com/AGWA/git-crypt)
 
 
-## [gitflow (AVH Edition)](https://github.com/petervanderdoes/gitflow) - This fork adds functionality not added to the original branch.
+## [gitflow (AVH Edition)](https://github.com/petervanderdoes/gitflow)
 
 
-## [git-hooks](https://github.com/icefox/git-hooks) - A tool to manage project, user, and global Git hooks for multiple git repositories.
+## [git-hooks](https://github.com/icefox/git-hooks)
 
 
-## [git-imerge](https://github.com/mhagger/git-imerge) - Incremental merge for git.
+## [git-imerge](https://github.com/mhagger/git-imerge)
 
 
-## [git-lfs](https://github.com/github/git-lfs) - git extension for versioning large files.
+## [git-lfs](https://github.com/github/git-lfs)
 
 
-## [git-now](https://github.com/iwata/git-now) - A temporary commit tool for git.
+## [git-now](https://github.com/iwata/git-now)
 
 
-## [git-plus](https://github.com/tkrajina/git-plus) - git utilities.
+## [git-plus](https://github.com/tkrajina/git-plus)
 
 
-## [git-sh](https://github.com/rtomayko/git-sh) - A customized bash environment suitable for git work.
+## [git-sh](https://github.com/rtomayko/git-sh)
 
 
-## [git-test](https://github.com/spotify/git-test) - Run tests on each distinct tree in a revision list, skipping versions whose contents have already been tested.
+## [git-test](https://github.com/spotify/git-test)
 
 
-## [GitTracker](https://github.com/stevenharman/git_tracker) - A git hook that will scan your current branch name looking for something it recognizes as a Pivotal Tracker story number.
+## [GitTracker](https://github.com/stevenharman/git_tracker)
 
 
-## [legit](https://github.com/kennethreitz/legit) - git for Humans.
+## [legit](https://github.com/kennethreitz/legit)
 
 
 ## License
