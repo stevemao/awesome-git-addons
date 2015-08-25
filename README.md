@@ -116,6 +116,10 @@ $ git create-branch development
 
 ```
 $ git delete-branch integration
+Deleted branch integration (was bfb8522).
+Deleted remote-tracking branch remote/integration (was bfb8522).
+To git@github.com:remote/gulp.git
+ - [deleted]         integration
 ```
 
 ### delete-submodule
@@ -128,6 +132,7 @@ $ git delete-submodule lib/foo
 
 ```
 $ git delete-tag 0.0.1
+Deleted tag '0.0.1' (was 08595cb)
 ```
 
 ### delete-merged-branches
@@ -143,6 +148,9 @@ Deleted feature/dashboard (was 923befa).
 
 ```
 $ git fresh-branch docs
+Removing .DS_Store
+Removing .editorconfig
+Removing .gitignore
 ```
 
 ### guilt
