@@ -4,7 +4,7 @@ A curated list of addons that extends git cli.
 
 ```
 $ git bla
-Something amazing happens!
+Something awesome happens!
 ```
 
 Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
