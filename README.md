@@ -14,6 +14,8 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
 - [Git Extras](#git-extras)
 - [git-flow](#gitflow-avh-edition)
+- [git-up](#git-up)
+- [hub](#hub)
 
 
 ## [Git Extras](https://github.com/tj/git-extras)
@@ -420,7 +422,7 @@ $ git psykorebase master feature
 
 ## [gitflow (AVH Edition)](https://github.com/petervanderdoes/gitflow)
 
-### flow-init
+### flow init
 
 ```
 $ git flow init
@@ -436,7 +438,7 @@ Branch name for "next release" development: [master]
 Production and integration branches should differ.
 ```
 
-### flow-feature
+### flow feature
 
 ```
 $ git flow feature
@@ -448,7 +450,7 @@ $ git flow feature publish awesome-feature
 $ git flow feature pull remote awesome-feature
 ```
 
-### flow-release
+### flow release
 
 ```
 $ git flow release
@@ -457,7 +459,7 @@ $ git flow release finish awesome-release
 $ git flow release delete awesome-release
 ```
 
-### flow-hotfix
+### flow hotfix
 
 ```
 $ git flow hotfix
@@ -466,7 +468,7 @@ $ git flow hotfix finish awesome-release
 $ git flow hotfix delete awesome-release
 ```
 
-### flow-support
+### flow support
 
 ```
 $ git flow support
@@ -477,6 +479,166 @@ $ git flow support
 
 
 ## [hub](https://github.com/github/hub)
+
+### clone
+
+```
+$ git clone schacon/ticgit
+> git clone git://github.com/schacon/ticgit.git
+
+$ git clone -p schacon/ticgit
+> git clone git@github.com:schacon/ticgit.git
+
+$ git clone resque
+> git clone git@github.com/YOUR_USER/resque.git
+```
+
+### remote add
+
+```
+$ git remote add rtomayko
+> git remote add rtomayko git://github.com/rtomayko/CURRENT_REPO.git
+
+$ git remote add -p rtomayko
+> git remote add rtomayko git@github.com:rtomayko/CURRENT_REPO.git
+
+$ git remote add origin
+> git remote add origin git://github.com/YOUR_USER/CURRENT_REPO.git
+```
+
+### fetch
+
+```
+$ git fetch mislav
+> git remote add mislav git://github.com/mislav/REPO.git
+> git fetch mislav
+
+$ git fetch mislav,xoebus
+> git remote add mislav ...
+> git remote add xoebus ...
+> git fetch --multiple mislav xoebus
+```
+
+### cherry-pick
+
+```
+$ git cherry-pick http://github.com/mislav/REPO/commit/SHA
+> git remote add -f --no-tags mislav git://github.com/mislav/REPO.git
+> git cherry-pick SHA
+
+$ git cherry-pick mislav@SHA
+> git remote add -f --no-tags mislav git://github.com/mislav/CURRENT_REPO.git
+> git cherry-pick SHA
+
+$ git cherry-pick mislav@SHA
+> git fetch mislav
+> git cherry-pick SHA
+```
+
+### am
+
+```
+$ git am https://github.com/defunkt/hub/pull/55
+[ downloads patch via API ]
+> git am /tmp/55.patch
+
+$ git am --ignore-whitespace https://github.com/davidbalbert/hub/commit/fdb9921
+[ downloads patch via API ]
+> git am --ignore-whitespace /tmp/fdb9921.patch
+```
+
+### apply
+
+```
+$ git apply https://gist.github.com/8da7fb575debd88c54cf
+[ downloads patch via API ]
+> git apply /tmp/gist-8da7fb575debd88c54cf.txt
+```
+
+### fork
+
+```
+$ git fork
+[ repo forked on GitHub ]
+> git remote add -f YOUR_USER git@github.com:YOUR_USER/CURRENT_REPO.git
+```
+
+### pull-request
+
+```
+$ git pull-request
+[ opens text editor to edit title & body for the request ]
+[ opened pull request on GitHub for "YOUR_USER:feature" ]
+```
+
+### checkout
+
+```
+$ git checkout https://github.com/defunkt/hub/pull/73
+> git remote add -f --no-tags -t feature mislav git://github.com/mislav/hub.git
+> git checkout --track -B mislav-feature mislav/feature
+```
+
+### merge
+
+```
+$ git merge https://github.com/defunkt/hub/pull/73
+> git fetch git://github.com/mislav/hub.git +refs/heads/feature:refs/remotes/mislav/feature
+> git merge mislav/feature --no-ff -m 'Merge pull request #73 from mislav/feature...'
+```
+
+### create
+
+```
+$ git create
+[ repo created on GitHub ]
+> git remote add origin git@github.com:YOUR_USER/CURRENT_REPO.git
+```
+
+### init
+
+```
+$ git init -g
+> git init
+> git remote add origin git@github.com:YOUR_USER/REPO.git
+```
+
+### push
+
+```
+$ git push origin,staging,qa bert_timeout
+> git push origin bert_timeout
+> git push staging bert_timeout
+> git push qa bert_timeout
+```
+
+### browse
+
+```
+$ git browse
+> open https://github.com/YOUR_USER/CURRENT_REPO
+```
+
+### compare
+
+```
+$ git compare refactor
+> open https://github.com/CURRENT_REPO/compare/refactor
+```
+
+### submodule
+
+```
+$ git submodule add wycats/bundler vendor/bundler
+> git submodule add git://github.com/wycats/bundler.git vendor/bundler
+```
+
+### ci-status
+
+```
+$ git ci-status
+success
+```
 
 
 ## [git-deploy](https://github.com/mislav/git-deploy)
