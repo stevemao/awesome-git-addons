@@ -16,7 +16,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-flow](#gitflow-avh-edition)
 - [git-up](#git-up)
 - [hub](#hub)
-- [deploy](#deploy)
+- [git-deploy](#git-deploy)
 
 
 ## [Git Extras](https://github.com/tj/git-extras)
