@@ -423,7 +423,7 @@ $ git psykorebase master feature
 ### flow-init
 
 ```
-git flow init
+$ git flow init
 
 Which branch should be used for bringing forth production releases?
    - changelog
@@ -434,6 +434,42 @@ Which branch should be used for integration of the "next release"?
    - changelog
 Branch name for "next release" development: [master]
 Production and integration branches should differ.
+```
+
+### flow-feature
+
+```
+$ git flow feature
+$ git flow feature start awesome-feature
+$ git flow feature finish awesome-feature
+$ git flow feature delete awesome-feature
+
+$ git flow feature publish awesome-feature
+$ git flow feature pull remote awesome-feature
+```
+
+### flow-release
+
+```
+$ git flow release
+$ git flow release start awesome-release
+$ git flow release finish awesome-release
+$ git flow release delete awesome-release
+```
+
+### flow-hotfix
+
+```
+$ git flow hotfix
+$ git flow hotfix start awesome-release
+$ git flow hotfix finish awesome-release
+$ git flow hotfix delete awesome-release
+```
+
+### flow-support
+
+```
+$ git flow support
 ```
 
 
