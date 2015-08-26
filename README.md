@@ -16,6 +16,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-flow](#gitflow-avh-edition)
 - [git-up](#git-up)
 - [hub](#hub)
+- [deploy](#deploy)
 
 
 ## [Git Extras](https://github.com/tj/git-extras)
@@ -642,6 +643,13 @@ success
 
 
 ## [git-deploy](https://github.com/mislav/git-deploy)
+
+```
+$ git remote add production "user@example.com:/apps/mynewapp"
+$ git deploy setup -r "production"
+$ git deploy init
+$ git push production master
+```
 
 
 ## [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt)
