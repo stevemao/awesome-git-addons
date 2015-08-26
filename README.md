@@ -117,6 +117,11 @@ total 855
 
 ```
 $ git create-branch development
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/stevemaotest/test.git
+ * [new branch]      HEAD -> development
+Branch development set up to track remote branch development from origin.
+Switched to a new branch 'development'
 ```
 
 ### delete-branch
@@ -138,8 +143,10 @@ $ git delete-submodule lib/foo
 ### delete-tag
 
 ```
-$ git delete-tag 0.0.1
-Deleted tag '0.0.1' (was 08595cb)
+$ git delete-tag v0.1.1
+Deleted tag 'v0.1.1' (was 9fde751)
+To https://github.com/stevemaotest/test.git
+ - [deleted]         v0.1.1
 ```
 
 ### delete-merged-branches
@@ -173,6 +180,14 @@ Mark Eissler                  ++++++++++++++++++++++++++
 
 ```
 $ git merge-into master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Updating 9fde751..e62edfa
+Fast-forward
+ 234 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 234
+Switched to branch 'development'
 ```
 
 ### graft
