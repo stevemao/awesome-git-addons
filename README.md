@@ -796,6 +796,14 @@ Branch 4.0 is older than 10 days (139.86)!
 
 ## [git-test](https://github.com/spotify/git-test)
 
+```
+$ git test -v
+4.0 ^origin/4.0 ^origin/master will test        2 commits
+iter commit  tree    result
+0000 57af4b0 f5ef0d8 pass (cached)
+0001 10ed389 434370f pass
+```
+
 
 ## [GitTracker](https://github.com/stevenharman/git_tracker)
 
