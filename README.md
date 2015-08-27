@@ -201,7 +201,12 @@ Switched to branch 'development'
 ### graft
 
 ```
-$ git graft new_feature master
+$ git graft development
+Your branch is up-to-date with 'origin/master'.
+Merge made by the 'recursive' strategy.
+ package.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Deleted branch development (was 64b3563).
 ```
 
 ### alias
@@ -988,11 +993,15 @@ Dropped stash@{0} (7c28b7f5eaf09dd72ec6e1ea440cbd1611e36c7f)
 
 ```
 $ git graft development
-Your branch is up-to-date with 'origin/master'.
+Switching to master.
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Grafting development into master.
 Merge made by the 'recursive' strategy.
- package.json | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-Deleted branch development (was 64b3563).
+ feature | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature
+Deleted branch development (was 6a022ba).
 ```
 
 ### publish
