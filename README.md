@@ -17,9 +17,6 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Up](#git-up)
 - [Hub](#hub)
 - [Git Deploy](#git-deploy)
-- [Git Stree](#git-stree)
-- [Git Subrepo](#git-subrepo)
-- [Git Archive All](#git-archive-all)
 - [Git Cal](#git-cal)
 - [Git Crypt](#git-crypt)
 - [Git Hooks](#git-hooks)
@@ -716,15 +713,6 @@ $ git deploy setup -r "production"
 $ git deploy init
 $ git push production master
 ```
-
-
-## [git-stree](https://github.com/tdd/git-stree)
-
-
-## [git-subrepo](https://github.com/ingydotnet/git-subrepo)
-
-
-## [git-archive-all](https://github.com/Kentzo/git-archive-all)
 
 
 ## [git-cal](https://github.com/k4rthik/git-cal)
