@@ -762,6 +762,37 @@ Date:   Thu Aug 27 10:39:10 2015 +1000
 
 ## [git-plus](https://github.com/tkrajina/git-plus)
 
+### multi
+
+```
+$ git multi
+--------------------------------------------------------------------------------
+Executing git status -s
+--------------------------------------------------------------------------------
+chalk:
+	 M package.json
+
+gulp:
+	 D index.js
+```
+
+### relation
+
+```
+$ git relation origin/4.0
+HEAD and origin/4.0 DIVERGED, common point is 657213a52d5e9c19b85df6a42f76341a98c08ae8
+
+Commits from 657213a52d5e9c19b85df6a42f76341a98c08ae8 to HEAD:
+Error retrieving log 657213a52d5e9c19b85df6a42f76341a98c08ae8..HEAD
+```
+
+### old-branches
+
+```
+$ git old-branches -d 10
+Branch 4.0 is older than 10 days (139.86)!
+```
+
 
 ## [git-test](https://github.com/spotify/git-test)
 
