@@ -13,10 +13,22 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 ## Table of Contents
 
 - [Git Extras](#git-extras)
-- [git-flow](#gitflow-avh-edition)
-- [git-up](#git-up)
-- [hub](#hub)
-- [git-deploy](#git-deploy)
+- [Git Flow](#gitflow-avh-edition)
+- [Git Up](#git-up)
+- [Hub](#hub)
+- [Git Deploy](#git-deploy)
+- [Git Stree](#git-stree)
+- [Git Subrepo](#git-subrepo)
+- [Git Archive All](#git-archive-all)
+- [Git Cal](#git-cal)
+- [Git Crypt](#git-crypt)
+- [Git Hooks](#git-hooks)
+- [Git Imerge](#git-imerge)
+- [Git Large File Storage](#git-lfs)
+- [Git Now](#git-now)
+- [Git Plus](#git-plus)
+- [Git Test](#git-test)
+- [Legit](#legit)
 
 
 ## [Git Extras](https://github.com/tj/git-extras)
