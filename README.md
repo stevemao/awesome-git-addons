@@ -689,9 +689,6 @@ $ git push production master
 ```
 
 
-## [bash-git-prompt](https://github.com/magicmonty/bash-git-prompt)
-
-
 ## [git-stree](https://github.com/tdd/git-stree)
 
 
@@ -764,9 +761,6 @@ Date:   Thu Aug 27 10:39:10 2015 +1000
 
 
 ## [git-plus](https://github.com/tkrajina/git-plus)
-
-
-## [git-sh](https://github.com/rtomayko/git-sh)
 
 
 ## [git-test](https://github.com/spotify/git-test)
