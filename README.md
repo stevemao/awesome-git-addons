@@ -18,7 +18,6 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Hub](#hub)
 - [Git Deploy](#git-deploy)
 - [Git Cal](#git-cal)
-- [Git Crypt](#git-crypt)
 - [Git Hooks](#git-hooks)
 - [Git Imerge](#git-imerge)
 - [Git Large File Storage](#git-lfs)
@@ -734,9 +733,6 @@ $ git cal
   35: Days ( May 17 2015 - Jun 20 2015 ) - Longest streak including weekends
    0: Days - Current streak
 ```
-
-
-## [git-crypt](https://github.com/AGWA/git-crypt)
 
 
 ## [git-hooks](https://github.com/icefox/git-hooks)
