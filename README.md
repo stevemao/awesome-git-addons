@@ -736,6 +736,32 @@ $ git cal
 
 ## [git-now](https://github.com/iwata/git-now)
 
+```
+$ git now
+[master 1bd9ce8] [from now] 2015/08/27 10:39:10
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git log
+commit 1bd9ce878a76140f7db95afd9cfd4d7befbc7243
+Author: Steve Mao <maochenyan@gmail.com>
+Date:   Thu Aug 27 10:39:10 2015 +1000
+
+    [from now] 2015/08/27 10:39:10
+
+    diff --git a/package.json b/package.json
+    index 8768569..540523a 100644
+    --- a/package.json
+    +++ b/package.json
+    @@ -1,7 +1,7 @@
+     {
+       "name": "gulp",
+       "description": "The streaming build system",
+    -  "version": "3.9.0",
+    +  "version": "3.10.0",
+       "homepage": "http://gulpjs.com",
+       "repository": "gulpjs/gulp",
+       "author": "Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
+```
+
 
 ## [git-plus](https://github.com/tkrajina/git-plus)
 
