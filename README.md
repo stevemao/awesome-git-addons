@@ -818,21 +818,111 @@ $ git branches
    old-master                 (published)
 ```
 
-### sync 
+### sync
+
+```
+$ git sync
+Pulling commits from the server.
+First, rewinding head to replay your work on top of it...
+Fast-forwarded 4.0 to origin/4.0.
+Pushing commits to the server.
+```
 
 ### resync
 
+```
+$ git resync
+Switching to master.
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+Pulling commits from the server.
+Already up-to-date.
+Switching to master.
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+Grafting commits from master.
+Already up-to-date.
+Pulling commits from the server.
+Already up-to-date.
+Pushing commits to the server.
+```
+
 ### switch
+
+```
+$ git switch master
+Saving local changes.
+Saved working directory and index state On developement: Legit: stashing before switching branches.
+HEAD is now at f0fc4c7 Merge branch 'development'
+Switching to master.
+Your branch is up-to-date with 'origin/master'.
+Restoring local changes.
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   package.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped stash@{0} (86f5dc9066ff9f69c01c77e2f5a55643ad19f8f2)
+```
 
 ### sprout
 
+```
+$ git sprout development
+Branching master to development.
+```
+
 ### harvest
 
-### graft 
+```
+$ git harvest development
+Grafting commits from development.
+Updating e4f08f4..64b3563
+Fast-forward
+ package.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Restoring local changes.
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+Dropped stash@{0} (7c28b7f5eaf09dd72ec6e1ea440cbd1611e36c7f)
+```
 
-### publish 
+### graft
+
+```
+$ git graft development
+Your branch is up-to-date with 'origin/master'.
+Merge made by the 'recursive' strategy.
+ package.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Deleted branch development (was 64b3563).
+```
+
+### publish
+
+```
+$ git publish
+   4.0                        (published)
+   changelog                  (published)
+   everything-is-not-awesome  (published)
+*  master                     (unpublished)
+Branch None not found, using current branch master
+Publishing master.
+Branch master set up to track remote branch master from origin.
+```
 
 ### unpublish
+
+```
+$ git unpublish master
+Unpublishing master.
+```
 
 
 ## License
