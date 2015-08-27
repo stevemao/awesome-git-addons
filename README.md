@@ -805,9 +805,6 @@ iter commit  tree    result
 ```
 
 
-## [GitTracker](https://github.com/stevenharman/git_tracker)
-
-
 ## [legit](https://github.com/kennethreitz/legit)
 
 
