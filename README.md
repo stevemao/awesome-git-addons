@@ -741,6 +741,14 @@ Attempting automerge of 1-10...success.
 
 ### imerge rebase
 
+```
+$ git imerge rebase 4.0
+The following commits on the to-be-merged branch are merge commits:
+    8e4931ae15971a14897cf347ac50b7d7fe125ac4
+    d7c772142ce663a20210db73d9ad17cc8d59e0d6
+    856df83c77b33029d2ddfb8eecd08efedeadc027
+```
+
 ### imerge continue
 
 ### imerge finish
