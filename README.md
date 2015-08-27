@@ -31,7 +31,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Legit](#legit)
 
 
-## [Git Extras](https://github.com/tj/git-extras)
+## [git-extras](https://github.com/tj/git-extras)
 
 ### squash
 
