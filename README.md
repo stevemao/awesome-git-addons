@@ -309,6 +309,9 @@ Makefile
 
 ```
 $ git undo
+Unstaged changes after reset:
+M	package.json
+M	readme.md
 ```
 
 ### gh-pages
@@ -327,6 +330,12 @@ $ git scp staging HEAD
 
 ```
 $ git setup
+Initialized empty Git repository in /GitHub/test/gulp/.git/
+[master (root-commit) 9469797] Initial commit
+ 69 files changed, 3900 insertions(+)
+ create mode 100644 .editorconfig
+ create mode 100644 .gitignore
+ create mode 100644 .jscsrc
 ```
 
 ### touch
@@ -339,6 +348,9 @@ $ git touch index.js
 
 ```
 $ git obliterate secrets.json
+Rewrite 2357a4334051a6d1733037406ab7538255030d0b (1/981)rm 'secrets.json'
+Rewrite b5f62b2746c23150917d346bd0c50c467f01eb03 (2/981)rm 'secrets.json'
+Rewrite 3cd94f3395c2701848f6ff626a0a4f883d8a8433 (3/981)rm 'secrets.json'
 ```
 
 ### feature|refactor|bug|chore
@@ -346,6 +358,11 @@ $ git obliterate secrets.json
 ```
 $ git feature dependencies
 $ git feature finish dependencies
+Already up-to-date.
+Deleted branch feature/dependencies (was f0fc4c7).
+Deleted remote-tracking branch origin/feature/dependencies (was f0fc4c7).
+To git@github.com:stevemao/gulp.git
+ - [deleted]         feature/dependencies
 ```
 
 ### local-commits
