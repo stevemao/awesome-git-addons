@@ -506,6 +506,15 @@ $ git flow support
 
 ## [git-up](https://github.com/aanand/git-up)
 
+```
+$ git up
+Fetching origin
+4.0       fast-forwarding...
+changelog ahead of upstream
+master    fast-forwarding...
+returning to 4.0
+```
+
 
 ## [hub](https://github.com/github/hub)
 
