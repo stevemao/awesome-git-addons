@@ -727,6 +727,40 @@ $ git cal
 
 ## [git-imerge](https://github.com/mhagger/git-imerge)
 
+### imerge start
+
+### imerge merge
+
+```
+$ git imerge merge 4.0
+Attempting automerge of 1-1...success.
+Attempting automerge of 1-6...success.
+Attempting automerge of 1-9...success.
+Attempting automerge of 1-10...success.
+```
+
+### imerge rebase
+
+### imerge continue
+
+### imerge finish
+
+### imerge diagram
+
+### imerge list
+
+### imerge init
+
+### imerge record
+
+### imerge autofill
+
+### imerge simplify
+
+### imerge remove
+
+### imerge reparent
+
 
 ## [git-lfs](https://github.com/github/git-lfs)
 
