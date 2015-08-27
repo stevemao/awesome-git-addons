@@ -801,6 +801,26 @@ The following commits on the to-be-merged branch are merge commits:
 
 ## [git-lfs](https://github.com/github/git-lfs)
 
+```
+$ git lfs track "*.mp3"
+Tracking *.mp3
+
+$ git lfs track "*.zip"
+Tracking *.zip
+
+$ git lfs track
+Listing tracked paths
+    *.mp3 (.gitattributes)
+    *.zip (.gitattributes)
+
+$ git lfs untrack "*.zip"
+Untracking *.zip
+
+$ git lfs track
+Listing tracked paths
+    *.mp3 (.gitattributes)
+```
+
 
 ## [git-now](https://github.com/iwata/git-now)
 
