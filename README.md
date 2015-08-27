@@ -807,6 +807,33 @@ iter commit  tree    result
 
 ## [legit](https://github.com/kennethreitz/legit)
 
+### branches
+
+```
+$ git branches
+   4.0                        (published)
+   development                (unpublished)
+   everything-is-not-awesome  (published)
+*  master                     (published)
+   old-master                 (published)
+```
+
+### sync 
+
+### resync
+
+### switch
+
+### sprout
+
+### harvest
+
+### graft 
+
+### publish 
+
+### unpublish
+
 
 ## License
 
