@@ -737,6 +737,22 @@ $ git cal
 
 ## [git-hooks](https://github.com/icefox/git-hooks)
 
+```
+$ git hooks --install
+$ git hooks
+Git hooks ARE installed in this repository.
+
+Listing User, Project, and Global hooks:
+---
+/Users/stevemao/.git_hooks:
+
+/GitHub/git-hooks/git_hooks:
+commit-msg/signed-off-by 	- Checks commit message for presence of Signed-off-by line.
+pre-commit/bsd 	- Check for the BSD license.
+
+/GitHub/git-hooks/.githooks:
+```
+
 
 ## [git-imerge](https://github.com/mhagger/git-imerge)
 
