@@ -26,6 +26,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Test](#git-test)
 - [Legit](#legit)
 - [Git When Merged](#git-when-merged)
+- [Git Playback](#git-playback)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1079,6 +1080,15 @@ refs/heads/master                      5a2ec1b1a6633f830bd4a2b1daab578c062e6975
 $ git when-merged HEAD
 refs/heads/master                      Commit is directly on this branch.
 ```
+
+
+## [git-playback](https://github.com/jianli/git-playback)
+
+```
+$ git playback README.md
+```
+
+![](https://camo.githubusercontent.com/9abe1d2de474dbc0d1ad4f48acf9e954ff0d0b30/68747470733a2f2f7261772e6769746875622e636f6d2f6a69616e6c692f6769742d706c61796261636b2f6d61737465722f616e696d6174696f6e2e676966)
 
 
 ## License
