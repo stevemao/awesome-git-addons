@@ -25,6 +25,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Plus](#git-plus)
 - [Git Test](#git-test)
 - [Legit](#legit)
+- [Git When Merged](#git-when-merged)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1067,6 +1068,16 @@ Branch master set up to track remote branch master from origin.
 ```
 $ git unpublish master
 Unpublishing master.
+```
+
+
+## [git-when-merged](https://github.com/mhagger/git-when-merged)
+
+```
+$ git when-merged a2c9e695ecf3600f21fa731e705fd1a0503632d9
+refs/heads/master                      5a2ec1b1a6633f830bd4a2b1daab578c062e6975
+$ git when-merged HEAD
+refs/heads/master                      Commit is directly on this branch.
 ```
 
 
