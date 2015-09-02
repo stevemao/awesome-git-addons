@@ -28,6 +28,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git When Merged](#git-when-merged)
 - [Git Playback](#git-playback)
 - [Git Branch Status](#git-branch-status)
+- [Git Open](#git-open)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1134,6 +1135,20 @@ $ git playback README.md
 $ git branch-status
  4.0       [57 ahead and 38 behind master]    [up to date with origin/4.0]
  master    [current branch]                   [1 ahead of origin/master]
+```
+
+
+## [git-open](https://github.com/paulirish/git-open)
+
+```
+$ git open
+> open https://github.com/REMOTE_ORIGIN_USER/CURRENT_REPO/tree/CURRENT_BRANCH
+
+$ git open upstream
+> open https://github.com/REMOTE_UPSTREAM_USER/CURRENT_REPO/tree/CURRENT_BRANCH
+
+$ git open upstream master
+> open https://github.com/REMOTE_UPSTREAM_USER/CURRENT_REPO/tree/master
 ```
 
 
