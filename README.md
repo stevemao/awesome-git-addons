@@ -27,6 +27,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Legit](#legit)
 - [Git When Merged](#git-when-merged)
 - [Git Playback](#git-playback)
+- [Git Branch Status](#git-branch-status)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1089,6 +1090,15 @@ $ git playback README.md
 ```
 
 ![](https://camo.githubusercontent.com/9abe1d2de474dbc0d1ad4f48acf9e954ff0d0b30/68747470733a2f2f7261772e6769746875622e636f6d2f6a69616e6c692f6769742d706c61796261636b2f6d61737465722f616e696d6174696f6e2e676966)
+
+
+## [git-branch-status](https://github.com/alexdavid/git-branch-status)
+
+```
+$ git branch-status
+ 4.0       [57 ahead and 38 behind master]    [up to date with origin/4.0]
+ master    [current branch]                   [1 ahead of origin/master]
+```
 
 
 ## License
