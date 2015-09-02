@@ -841,15 +841,51 @@ $ git imerge list
 
 ### imerge init
 
+```
+$ git imerge init --name=next --goal=merge --first-parent 4.0
+```
+
 ### imerge record
+
+```
+$ git imerge record
+Merge has been recorded for merge 10-26.
+Attempting automerge of 10-27...success.
+Attempting automerge of 10-42...failure.
+Attempting automerge of 10-34...failure.
+```
 
 ### imerge autofill
 
+```
+$ git imerge autofill
+Attempting automerge of 1-1...success.
+Attempting automerge of 1-29...success.
+Attempting automerge of 1-44...success.
+```
+
 ### imerge simplify
+
+```
+$ git imerge simplify
+Previous HEAD position was 4d19598... imerge 'next': automatic merge 20-57
+Switched to branch 'next'
+[next 6c308aa] Merge 4.0 into master (using imerge)
+ Date: Wed Sep 2 13:37:31 2015 +1000
+```
 
 ### imerge remove
 
+```
+$ git imerge remove
+```
+
 ### imerge reparent
+
+```
+$ git imerge reparent
+67ebc0e6517ac791de6699453b71d2c7fd81ffcd
+```
 
 
 ## [git-lfs](https://github.com/github/git-lfs)
