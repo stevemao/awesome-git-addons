@@ -763,6 +763,14 @@ pre-commit/bsd 	- Check for the BSD license.
 
 ### imerge start
 
+```
+$ git imerge start --name=next --goal=merge --first-parent 4.0
+Attempting automerge of 1-1...success.
+Attempting automerge of 1-29...success.
+Attempting automerge of 1-44...success.
+Attempting automerge of 1-51...success.
+```
+
 ### imerge merge
 
 ```
@@ -785,11 +793,48 @@ The following commits on the to-be-merged branch are merge commits:
 
 ### imerge continue
 
+```
+$ git add --all
+$ git commit
+[imerge/next e442618] imerge 'next': manual merge 10-26
+$ git imerge continue
+Merge has been recorded for merge 10-26.
+Attempting automerge of 10-27...success.
+Attempting automerge of 10-42...failure.
+Attempting automerge of 10-34...failure.
+Attempting automerge of 10-30...success.
+Recording autofilled block MergeState('next', tip1='master', tip2='4.0', goal='merge')[18:20,34:58].
+Merge is complete!
+```
+
 ### imerge finish
+
+```
+$ git imerge finish
+Previous HEAD position was fcbe161... imerge 'next': automatic merge 19-57
+Switched to branch 'next'
+[next 23362e6] Merge 4.0 into master (using imerge)
+ Date: Wed Sep 2 10:59:56 2015 +1000
+```
 
 ### imerge diagram
 
+```
+$ git imerge diagram
+********************
+*????????.?????????|
+*????????.?????????|
+*????????.?????????|
+*????????...-------+
+*????????.*|#???????
+```
+
 ### imerge list
+
+```
+$ git imerge list
+* next
+```
 
 ### imerge init
 
