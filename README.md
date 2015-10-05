@@ -974,6 +974,14 @@ $ git old-branches -d 10
 Branch 4.0 is older than 10 days (139.86)!
 ```
 
+### recent
+
+```
+$ git recent
+      3.64 days: master
+     11.63 days: dev
+```
+
 
 ## [git-test](https://github.com/spotify/git-test)
 
