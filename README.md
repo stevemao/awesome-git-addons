@@ -7,6 +7,8 @@ $ git bla
 Something awesome happens!
 ```
 
+> _“You don’t have to know everything. You simply need to know where to find it when necessary.” (John Brunner)_
+
 Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
 
