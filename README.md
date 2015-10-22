@@ -31,6 +31,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Playback](#git-playback)
 - [Git Branch Status](#git-branch-status)
 - [Git Open](#git-open)
+- [Git My](#git-my)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1159,6 +1160,24 @@ $ git open upstream
 
 $ git open upstream master
 > open https://github.com/REMOTE_UPSTREAM_USER/CURRENT_REPO/tree/master
+```
+
+
+## [git-my](https://github.com/davidosomething/git-my)
+
+```
+$ git my
+
++------------------------------------------------------------------------------+
+| your name's remote branches in git@repo:repopath/reponame.git                |
++------------------------------------------------------------------------------+
+
+   local copy?  in master?  branch name
+  ................[merged]. EC-242
+  .....[local]....[merged]. commonjs-lazyload
+  .....[local]............. enqueue-gpt
+  ......................... defunct-ios-app-nag
+  .....[local]............. factor-bundles
 ```
 
 
