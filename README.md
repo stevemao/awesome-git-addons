@@ -31,6 +31,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Playback](#git-playback)
 - [Git Branch Status](#git-branch-status)
 - [Git Open](#git-open)
+- [Git Ink](#git-ink)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
