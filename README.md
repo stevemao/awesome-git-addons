@@ -32,6 +32,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Branch Status](#git-branch-status)
 - [Git Open](#git-open)
 - [Git My](#git-my)
+- [Git Ink](#git-ink)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1178,6 +1179,29 @@ $ git my
   .....[local]............. enqueue-gpt
   ......................... defunct-ios-app-nag
   .....[local]............. factor-bundles
+```
+
+
+## [git-ink](https://github.com/davidosomething/git-ink)
+
+```
+$ git ink
+
+• enqueue-gpt ........................................... 2015-08-31
+• factor-bundles ........................................ 2015-10-14
+    - Pull out more modules into node_modules
+    - Works but does not provide any gains
+• hbsfy ................................................. 2015-10-21
+✓ master ................................................ 2015-10-22
+• nda-ads4 .............................................. 2015-10-22
+• remove-equalize_content_height ........................ 2015-10-21
+• remove-exorcise ....................................... 2015-10-21
+    - Need to DRY up exorcise function
+    - Does not map properly when uglified
+    - Need to undo postCSS mapping changes
+• rm-convert_dates-order ................................ 2015-10-22
+• sass-lint ............................................. 2015-10-14
+    - module does not work
 ```
 
 
