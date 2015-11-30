@@ -11,7 +11,7 @@ Something awesome happens!
 
 Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
-**Note**: Some of the commands may not work out of the box. You might need to run a post install script to add aliases or add the them manually.
+**Note**: Some of the commands may not work out of the box. You might need to run a post install script to add aliases or add them manually.
 
 
 ## Table of Contents
