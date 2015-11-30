@@ -33,6 +33,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Open](#git-open)
 - [Git My](#git-my)
 - [Git Ink](#git-ink)
+- [Recursive Blame](#recursive-blame)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1203,6 +1204,9 @@ $ git ink
 • sass-lint ............................................. 2015-10-14
     - module does not work
 ```
+
+
+## [recursive-blame](https://github.com/scottgonzalez/recursive-blame)
 
 
 ## License
