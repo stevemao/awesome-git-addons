@@ -1210,6 +1210,44 @@ $ git ink
 
 ## [recursive-blame](https://github.com/scottgonzalez/recursive-blame)
 
+```
+$ git recursive-blame version package.json
+
+Commit: 247479d017f138c26be27c64a0ce27f5f21fc0af
+Author: Jeff Cross <middlefloor@gmail.com>
+Date:   Tue Oct 13 15:58:13 2015 -0700 (7 weeks ago)
+Path:   package.json
+Match:  1 of 1
+
+    chore(release): bump angular version to alpha.42
+
+1) {
+2)   "name": "angular",
+3)   "version": "2.0.0-alpha.42",
+4)   "branchPattern": "2.0.*",
+5)   "description": "Angular 2 - a web framework for modern web apps",
+6)   "homepage": "https://github.com/angular/angular",
+7)   "bugs": "https://github.com/angular/angular/issues",
+
+Next action [r,n,p,c,d,q,?]? r
+
+Commit: bb9d299b3860f6d579192828451ccd7ace70e1d8
+Author: Igor Minar <igor@angularjs.org>
+Date:   Tue Oct 13 12:28:03 2015 -0700 (7 weeks ago)
+Path:   package.json
+Match:  1 of 1
+
+    chore(release): bump angular version to alpha.41
+
+1) {
+2)   "name": "angular",
+3)   "version": "2.0.0-alpha.41",
+4)   "branchPattern": "2.0.*",
+5)   "description": "Angular 2 - a web framework for modern web apps",
+6)   "homepage": "https://github.com/angular/angular",
+7)   "bugs": "https://github.com/angular/angular/issues",
+```
+
 
 ## License
 
