@@ -36,6 +36,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git My](#git-my)
 - [Git Ink](#git-ink)
 - [Recursive Blame](#recursive-blame)
+- [Git Fire](#git-fire)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1246,6 +1247,24 @@ Match:  1 of 1
 5)   "description": "Angular 2 - a web framework for modern web apps",
 6)   "homepage": "https://github.com/angular/angular",
 7)   "bugs": "https://github.com/angular/angular/issues",
+```
+
+## [git-fire](https://github.com/qw3rtman/git-fire)
+
+```
+$ git fire
+Switched to a new branch 'fire-master-maochenyan@gmail.com-1451379915'
+On branch fire-master-maochenyan@gmail.com-1451379915
+nothing to commit, working directory clean
+Counting objects: 2, done.
+Writing objects: 100% (2/2), 168 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To git@bitbucket.org:maochenyan/fire.git
+ * [new branch]      fire-master-maochenyan@gmail.com-1451379915 -> fire-master-maochenyan@gmail.com-1451379915
+Branch fire-master-maochenyan@gmail.com-1451379915 set up to track remote branch fire-master-maochenyan@gmail.com-1451379915 from origin.
+
+
+Leave building!
 ```
 
 
