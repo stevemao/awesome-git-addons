@@ -38,6 +38,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Recursive Blame](#recursive-blame)
 - [Git Fire](#git-fire)
 - [Git Thanks](#git-thanks)
+- [Git Town](#git-town)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1273,6 +1274,8 @@ Leave building!
 ```
 $ git thanks -m "Thank you for the work you have done."
 ```
+
+## [git-town](https://github.com/Originate/git-town)
 
 
 ## License
