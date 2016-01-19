@@ -39,6 +39,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Fire](#git-fire)
 - [Git Thanks](#git-thanks)
 - [Git Town](#git-town)
+- [Git Fu](#git-fu)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1251,6 +1252,7 @@ Match:  1 of 1
 7)   "bugs": "https://github.com/angular/angular/issues",
 ```
 
+
 ## [git-fire](https://github.com/qw3rtman/git-fire)
 
 ```
@@ -1269,13 +1271,22 @@ Branch fire-master-maochenyan@gmail.com-1451379915 set up to track remote branch
 Leave building!
 ```
 
+
 ## [git-thanks](https://github.com/spulec/git-thanks)
 
 ```
 $ git thanks -m "Thank you for the work you have done."
 ```
 
+
 ## [git-town](https://github.com/Originate/git-town)
+
+TBD
+
+
+## [git-fu](https://github.com/divoxx/git-fu)
+
+TBD
 
 
 ## License
