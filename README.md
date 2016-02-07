@@ -39,6 +39,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Fire](#git-fire)
 - [Git Town](#git-town)
 - [Git Fu](#git-fu)
+- [Git blame-someone-else](#git-blame-someone-else)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1261,6 +1262,11 @@ TBD
 
 
 ## [git-fu](https://github.com/divoxx/git-fu)
+
+TBD
+
+
+## [git-blame-someone-else](https://github.com/jayphelps/git-blame-someone-else)
 
 TBD
 
