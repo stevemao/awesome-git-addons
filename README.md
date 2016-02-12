@@ -40,6 +40,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Town](#git-town)
 - [Git Fu](#git-fu)
 - [Git blame-someone-else](#git-blame-someone-else)
+- [Diff So Fancy](#diff-so-fancy)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1269,6 +1270,15 @@ TBD
 ## [git-blame-someone-else](https://github.com/jayphelps/git-blame-someone-else)
 
 TBD
+
+
+## [diff-so-fancy](https://github.com/stevemao/diff-so-fancy)
+
+```
+git dsf
+```
+
+![diff-highlight vs diff-so-fancy](https://cloud.githubusercontent.com/assets/39191/10000682/8e849130-6052-11e5-9bd9-bd4505cd24d6.png)
 
 
 ## License
