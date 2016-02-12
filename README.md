@@ -1278,7 +1278,7 @@ TBD
 git dsf
 ```
 
-![diff-highlight vs diff-so-fancy](https://cloud.githubusercontent.com/assets/39191/10000682/8e849130-6052-11e5-9bd9-bd4505cd24d6.png)
+![diff-so-fancy](https://cloud.githubusercontent.com/assets/6316590/12998528/c8f88f1c-d198-11e5-8088-8a292096f038.png)
 
 
 ## License
