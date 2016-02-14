@@ -1272,7 +1272,7 @@ TBD
 TBD
 
 
-## [diff-so-fancy](https://github.com/stevemao/diff-so-fancy)
+## [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
 ```
 git dsf
