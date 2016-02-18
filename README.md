@@ -1269,13 +1269,16 @@ TBD
 
 ## [git-blame-someone-else](https://github.com/jayphelps/git-blame-someone-else)
 
-TBD
+```
+$ git blame-someone-else 'Steve Mao <maochenyan@gmail.com>' 2efb4e3a061a2e8aaa58033e9c13c3e0e5fcde4b
+Steve Mao  is now the author of 2efb4e3. You're officially an asshole.
+```
 
 
 ## [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
 ```
-git dsf
+$ git dsf
 ```
 
 ![diff-so-fancy](https://cloud.githubusercontent.com/assets/6316590/12998528/c8f88f1c-d198-11e5-8088-8a292096f038.png)
