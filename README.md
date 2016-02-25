@@ -41,6 +41,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Fu](#git-fu)
 - [Git blame-someone-else](#git-blame-someone-else)
 - [Diff So Fancy](#diff-so-fancy)
+- [Git Stats](#git-stats)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1282,6 +1283,11 @@ $ git dsf
 ```
 
 ![diff-so-fancy](https://cloud.githubusercontent.com/assets/6316590/12998528/c8f88f1c-d198-11e5-8088-8a292096f038.png)
+
+
+## [git-stats](https://github.com/IonicaBizau/git-stats)
+
+TBD
 
 
 ## License
