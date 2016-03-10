@@ -42,6 +42,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git blame-someone-else](#git-blame-someone-else)
 - [Diff So Fancy](#diff-so-fancy)
 - [Git Stats](#git-stats)
+- [Git Secret](#git-secret)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1288,6 +1289,14 @@ $ git dsf
 ## [git-stats](https://github.com/IonicaBizau/git-stats)
 
 TBD
+
+## [git-secret](https://github.com/sobolevn/git-secret)
+
+```
+$ git secret init
+```
+
+![git-secret terminal preview](https://raw.githubusercontent.com/sobolevn/git-secret/gh-pages/images/gitsecret_terminal.gif)
 
 
 ## License
