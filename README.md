@@ -1292,12 +1292,55 @@ TBD
 
 ## [git-secret](https://github.com/sobolevn/git-secret)
 
+### git secret init
+
 ```
 $ git secret init
+'.gitsecret/' created.
 ```
 
-![git-secret terminal preview](https://raw.githubusercontent.com/sobolevn/git-secret/gh-pages/images/gitsecret_terminal.gif)
+### git secret tell
 
+```
+$ git secret tell my@email.com
+done. my@email.com added as a person who knows the secret.
+cleaning up...
+```
+
+### git secret add
+
+```
+$ git secret add hideme.txt 
+1 items added.
+```
+
+### git secret list
+
+```
+$ git secret list
+hideme.txt
+```
+
+### git secret hide
+
+```
+$ git secret hide
+done. all 1 files are hidden.
+```
+
+### git secret reveal
+
+```
+$ git secret reveal
+
+You need a passphrase to unlock the secret key for
+user: "Test User <my@email.com>"
+2048-bit RSA key, ID #######, created 2015-01-01 (main key ID #######)
+
+gpg: gpg-agent is not available in this session
+File `hideme.txt' exists. Overwrite? (y/N) y
+done. all 1 files are revealed.
+```
 
 ## License
 
