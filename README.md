@@ -43,6 +43,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Diff So Fancy](#diff-so-fancy)
 - [Git Stats](#git-stats)
 - [Git Secret](#git-secret)
+- [apply-pr](#apply-pr)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1341,6 +1342,12 @@ gpg: gpg-agent is not available in this session
 File `hideme.txt' exists. Overwrite? (y/N) y
 done. all 1 files are revealed.
 ```
+
+
+## [apply-pr](https://github.com/petkaantonov/apply-pr)
+
+TBD
+
 
 ## License
 
