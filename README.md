@@ -1289,7 +1289,8 @@ $ git dsf
 
 ## [git-stats](https://github.com/IonicaBizau/git-stats)
 
-TBD
+![](http://i.imgur.com/PpM0i3v.png)
+
 
 ## [git-secret](https://github.com/sobolevn/git-secret)
 
