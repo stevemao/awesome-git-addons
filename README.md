@@ -44,6 +44,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Stats](#git-stats)
 - [Git Secret](#git-secret)
 - [apply-pr](#apply-pr)
+- [git-fixup](#git-fixup)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1348,6 +1349,22 @@ done. all 1 files are revealed.
 ## [apply-pr](https://github.com/petkaantonov/apply-pr)
 
 TBD
+
+## [git-fixup](https://github.com/keis/git-fixup)
+
+```
+$ git diff --cached -U0
+diff --git a/README.md b/README.md
+index 0c700d1..7a57cef 100644
+--- a/README.md
++++ b/README.md
+@@ -1330 +1330 @@ $ git secret hide
+-done. all 1 files are hidden.
++done. all 3 files are hidden.
+$ git fixup 6d623f6525dd94b4aaea6f6ae2e7a59edc39bdb8
+24aa3d9c10cc02fe813dc83d1ac792cc2e7d705d [F] add screenshot of git-stats <maochenyan@gmail.com>
+6d623f6525dd94b4aaea6f6ae2e7a59edc39bdb8 [L] changed gif with text <mail@sobolevn.me>
+```
 
 
 ## License
