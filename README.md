@@ -38,7 +38,6 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Recursive Blame](#recursive-blame)
 - [Git Fire](#git-fire)
 - [Git Town](#git-town)
-- [Git Fu](#git-fu)
 - [Git blame-someone-else](#git-blame-someone-else)
 - [Diff So Fancy](#diff-so-fancy)
 - [Git Stats](#git-stats)
@@ -1266,11 +1265,6 @@ Leave building!
 TBD
 
 
-## [git-fu](https://github.com/divoxx/git-fu)
-
-TBD
-
-
 ## [git-blame-someone-else](https://github.com/jayphelps/git-blame-someone-else)
 
 ```
@@ -1349,6 +1343,7 @@ done. all 1 files are revealed.
 ## [apply-pr](https://github.com/petkaantonov/apply-pr)
 
 TBD
+
 
 ## [git-fixup](https://github.com/keis/git-fixup)
 
