@@ -44,6 +44,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Secret](#git-secret)
 - [apply-pr](#apply-pr)
 - [git-fixup](#git-fixup)
+- [git-recent](#git-recent)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1360,6 +1361,14 @@ $ git fixup 6d623f6525dd94b4aaea6f6ae2e7a59edc39bdb8
 24aa3d9c10cc02fe813dc83d1ac792cc2e7d705d [F] add screenshot of git-stats <maochenyan@gmail.com>
 6d623f6525dd94b4aaea6f6ae2e7a59edc39bdb8 [L] changed gif with text <mail@sobolevn.me>
 ```
+
+## [git-recent](https://github.com/paulirish/git-recent)
+
+```
+$ git recent
+```
+
+![git-recent screenshot](https://cloud.githubusercontent.com/assets/39191/17446638/039d4cee-5aff-11e6-9e11-4294f0020513.png)
 
 
 ## License
