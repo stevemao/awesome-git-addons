@@ -45,6 +45,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [apply-pr](#apply-pr)
 - [git-fixup](#git-fixup)
 - [git-recent](#git-recent)
+- [git-fiddle](#git-fiddle)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1362,6 +1363,7 @@ $ git fixup 6d623f6525dd94b4aaea6f6ae2e7a59edc39bdb8
 6d623f6525dd94b4aaea6f6ae2e7a59edc39bdb8 [L] changed gif with text <mail@sobolevn.me>
 ```
 
+
 ## [git-recent](https://github.com/paulirish/git-recent)
 
 ```
@@ -1369,6 +1371,30 @@ $ git recent
 ```
 
 ![git-recent screenshot](https://cloud.githubusercontent.com/assets/39191/17446638/039d4cee-5aff-11e6-9e11-4294f0020513.png)
+
+
+## [git-fiddle](https://github.com/felixSchl/git-fiddle)
+
+```
+$ git fiddle -h
+git-fiddle
+
+Edit commit meta information during an *interactive* rebase.
+
+`git-fiddle(1)' is a lightweight wrapper around `git-rebase(1)' that
+annotates each commit with it's *author* date, the author name, as well
+as the commit message. Changes to any of these will then be applied
+using an 'exec' script during the git-rebase sequence.
+
+Usage:
+  $SCRIPT [--[no-]-fiddle-messages] [args...]
+
+Options:
+  --[no-]fiddle-messages Do not edit commit messages. Useful for quick edits
+                         to author or date. This value can also be set using
+                         `git config fiddle.messages`.
+  [args...]              These arguments are passed verbatim to git-rebase.
+```
 
 
 ## License
