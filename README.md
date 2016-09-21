@@ -1399,9 +1399,7 @@ Options:
 
 ## [git-user](https://github.com/gesquive/git-user)
 
-```console
-$ cd /path/to/git/project
-
+```shell
 # add a work profile for Henry
 $ git user add work "Dr. Henry Jekyll" henry@jekyll.com
 Added profile 'work'
