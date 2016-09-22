@@ -46,6 +46,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-fixup](#git-fixup)
 - [git-recent](#git-recent)
 - [git-fiddle](#git-fiddle)
+- [git-user](#git-user)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1309,7 +1310,7 @@ cleaning up...
 ### git secret add
 
 ```
-$ git secret add hideme.txt 
+$ git secret add hideme.txt
 1 items added.
 ```
 
@@ -1394,6 +1395,41 @@ Options:
                          to author or date. This value can also be set using
                          `git config fiddle.messages`.
   [args...]              These arguments are passed verbatim to git-rebase.
+```
+
+## [git-user](https://github.com/gesquive/git-user)
+
+```shell
+# add a work profile for Henry
+$ git user add work "Dr. Henry Jekyll" henry@jekyll.com
+Added profile 'work'
+
+# add a personal profile for Edward
+$ git user add home "Edward Hyde" hyde@night.com
+Added profile 'home'
+
+# list out our saved profiles
+$ git user list
+Global Profile:
+  User: Henry <hjekyll@gmail.com>
+
+Saved Profiles:
+  home: Edward Hyde <hyde@night.com>
+  work: Dr. Henry Jekyll <henry@jekyll.com>
+
+# set the current git repository user to the home profile
+$ git user set home
+The user for the 'project' repository has been set too 'Edward Hyde <hyde@night.com>'
+
+# list profiles again, notice how the current repository profile is now set
+$ git user
+Project Profile:
+  Path: /path/to/git/project
+  User: Edward Hyde <hyde@night.com>
+
+Saved Profiles:
+  home: Edward Hyde <hyde@night.com>
+  work: Dr. Henry Jekyll <henry@jekyll.com>
 ```
 
 
