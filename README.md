@@ -47,6 +47,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-recent](#git-recent)
 - [git-fiddle](#git-fiddle)
 - [git-user](#git-user)
+- [git-cleanup-branch](#git-cleanup-branch)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1397,6 +1398,7 @@ Options:
   [args...]              These arguments are passed verbatim to git-rebase.
 ```
 
+
 ## [git-user](https://github.com/gesquive/git-user)
 
 ```
@@ -1431,6 +1433,11 @@ Saved Profiles:
   home: Edward Hyde <hyde@night.com>
   work: Dr. Henry Jekyll <henry@jekyll.com>
 ```
+
+
+## git-cleanup-branch
+
+TBD
 
 
 ## License
