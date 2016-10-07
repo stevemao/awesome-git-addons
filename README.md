@@ -1437,7 +1437,7 @@ Saved Profiles:
 
 ## [git-cleanup-branch](https://github.com/ne-sachirou/git-cleanup-branch)
 
-TBD
+![git-cleanup-branch](https://raw.githubusercontent.com/ne-sachirou/git-cleanup-branch/master/demo.gif)
 
 
 ## License
