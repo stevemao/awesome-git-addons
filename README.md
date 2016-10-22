@@ -48,6 +48,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-fiddle](#git-fiddle)
 - [git-user](#git-user)
 - [git-cleanup-branch](#git-cleanup-branch)
+- [gitsome](#gitsome)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1438,6 +1439,11 @@ Saved Profiles:
 ## [git-cleanup-branch](https://github.com/ne-sachirou/git-cleanup-branch)
 
 ![git-cleanup-branch](https://raw.githubusercontent.com/ne-sachirou/git-cleanup-branch/master/demo.gif)
+
+
+## [gitsome](https://github.com/donnemartin/gitsome)
+
+TBD
 
 
 ## License
