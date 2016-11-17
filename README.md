@@ -49,6 +49,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-user](#git-user)
 - [git-cleanup-branch](#git-cleanup-branch)
 - [gitsome](#gitsome)
+- [Git Hound](#git-hound)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1442,6 +1443,11 @@ Saved Profiles:
 
 
 ## [gitsome](https://github.com/donnemartin/gitsome)
+
+TBD
+
+
+## [git-hound](https://github.com/ezekg/git-hound)
 
 TBD
 
