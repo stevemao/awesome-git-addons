@@ -50,6 +50,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-cleanup-branch](#git-cleanup-branch)
 - [gitsome](#gitsome)
 - [Git Hound](#git-hound)
+- [git-recall](#git-recall)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1450,6 +1451,27 @@ TBD
 ## [git-hound](https://github.com/ezekg/git-hound)
 
 TBD
+
+## [git-recall](https://github.com/Fakerr/git-recall)
+
+Simple and handy tool to easily recall what you've done
+
+![](https://camo.githubusercontent.com/eb306717b95724c33dd0de91faa535a4818cc7d0/687474703a2f2f696d6775722e636f6d2f7a7577324c71572e676966)
+
+```
+$ git recall
+# By default (without options), the command will display commits from yesterday and
+# for the current user.
+
+$ git recall -d 5 -a "Doge"
+# Show all Doge's commits from 5 days ago.
+
+$ git recall -d 5 -a "all"
+# Show commits of all contributors from 5 days ago.
+
+$ git recall -f
+# Fetch commits beforehand.
+```
 
 
 ## License
