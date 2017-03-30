@@ -51,6 +51,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [gitsome](#gitsome)
 - [Git Hound](#git-hound)
 - [git-recall](#git-recall)
+- [git-standup](#git-standup)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1452,9 +1453,8 @@ TBD
 
 TBD
 
-## [git-recall](https://github.com/Fakerr/git-recall)
 
-Simple and handy tool to easily recall what you've done
+## [git-recall](https://github.com/Fakerr/git-recall)
 
 ![](https://camo.githubusercontent.com/eb306717b95724c33dd0de91faa535a4818cc7d0/687474703a2f2f696d6775722e636f6d2f7a7577324c71572e676966)
 
@@ -1471,6 +1471,14 @@ $ git recall -d 5 -a "all"
 
 $ git recall -f
 # Fetch commits beforehand.
+```
+
+
+## [git-standup](https://github.com/kamranahmedse/git-standup)
+
+```
+$ git standup
+87e9a50 - i did something awesome! (5 seconds ago) <Steve Mao>
 ```
 
 
