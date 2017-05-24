@@ -1479,7 +1479,15 @@ $ git recall -f
 
 ```
 $ git standup
-87e9a50 - i did something awesome! (5 seconds ago) <Steve Mao>
+2f50b39c - docs(commit messages): use commitizen to generate Conventional Commits (12 hours ago) <Steve Mao>
+9af3600e - fix tests (12 hours ago) <Steve Mao>
+7f17ba97 - docs: title case (12 hours ago) <Steve Mao>
+a6d6203c - do not scroll when search is open (12 hours ago) <Steve Mao>
+53fe681a - chore(pkg): add repo url (12 hours ago) <Steve Mao>
+5e952ac0 - subtitle should be generic (13 hours ago) <Steve Mao>
+adbc5423 - add ci/cd to readme. (13 hours ago) <Steve Mao>
+a1097116 - add versioning to readme (14 hours ago) <Steve Mao>
+6b6e7465 - add test coverage (15 hours ago) <Steve Mao>
 ```
 
 
