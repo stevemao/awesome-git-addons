@@ -52,6 +52,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Hound](#git-hound)
 - [git-recall](#git-recall)
 - [git-standup](#git-standup)
+- [Commitizen](#commitizen)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1479,6 +1480,27 @@ $ git recall -f
 ```
 $ git standup
 87e9a50 - i did something awesome! (5 seconds ago) <Steve Mao>
+```
+
+
+## [commitizen](https://github.com/commitizen/cz-cli)
+
+```
+$ git cz
+cz-cli@2.9.6, cz-conventional-changelog@1.2.0
+
+
+Line 1 will be cropped at 100 characters. All other lines will be wrapped after 100 characters.
+
+? Select the type of change that you're committing: (Use arrow keys)
+❯ feat:     A new feature
+  fix:      A bug fix
+  docs:     Documentation only changes
+  style:    Changes that do not affect the meaning of the code (white-space, formatting, missing semi
+-colons, etc)
+  refactor: A code change that neither fixes a bug nor adds a feature
+  perf:     A code change that improves performance
+  test:     Adding missing tests or correcting existing tests
 ```
 
 
