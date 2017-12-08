@@ -1509,8 +1509,13 @@ Line 1 will be cropped at 100 characters. All other lines will be wrapped after 
 
 ## [git-fresh](https://github.com/imsky/git-fresh)
 
-TBD
-
+```
+Usage: git fresh [-fmrtRW] [-sl] [remote] [root]
+By default, git-fresh will:
+ - update local root (master) to match remote root
+ - stash changes
+ - prune remote branches
+```
 
 ## License
 
