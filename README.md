@@ -53,6 +53,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-standup](#git-standup)
 - [Commitizen](#commitizen)
 - [git-fresh](#git-fresh)
+- [git-fs](#git-fs)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1510,6 +1511,15 @@ Line 1 will be cropped at 100 characters. All other lines will be wrapped after 
 ## [git-fresh](https://github.com/imsky/git-fresh)
 
 TBD
+
+## [git-fs](https://github.com/freddi301/git-fs)
+
+### command
+
+```
+$ git fs
+Mounting readnly filesystem on ./git/fs
+```
 
 
 ## License
