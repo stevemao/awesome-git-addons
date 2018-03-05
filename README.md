@@ -54,6 +54,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Commitizen](#commitizen)
 - [git-fresh](#git-fresh)
 - [git-fs](#git-fs)
+- [Git Url](#git-url)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1519,6 +1520,66 @@ TBD
 ```
 $ git fs
 Mounting readnly filesystem on ./git/fs
+```
+
+## [git-url](https://github.com/zdharma/git-url)
+
+[Screenshot](https://raw.githubusercontent.com/zdharma/git-url/images/git-url.png)
+
+### git url
+
+```
+$ cd ~/github/git-url.git
+$ git url
+Encoding... INPUT is next paragraph:
+
+Protocol:  https
+Site:      github.com
+Repo:      zdharma/git-url
+Revision:  master
+
+gitu://ҝjȩMżEäḝЃȣϟṈӛŀї
+
+$ git url -r v1.0
+Encoding... INPUT is next paragraph:
+
+Protocol:  https
+Site:      github.com
+Repo:      zdharma/git-url
+Revision:  v1.0
+
+gitu://ŪĪАϔEäḝЃȣϟṈӛŀї
+
+$ git url -q -p lib/common.sh	# -q - quiet, -p - path
+gitu://eḶȸṋ0oǗȟЗÛjȩMżEäḝЃȣϟṈӛŀї
+
+$ git url //eḶȸṋ0oǗȟЗÛjȩMżEäḝЃȣϟṈӛŀї
+Decoding... OUTPUT is:
+
+Protocol:  https
+Site:      github.com
+Repo:      zdharma/git-url
+Revision:  master
+File:      lib/common.sh
+
+https://github.com/zdharma/git-url
+```
+ 
+### git guclone
+
+```
+$ git guclone ŪĪАϔEäḝЃȣϟṈӛŀї
+Cloning URL https://github.com/zdharma/git-url for revision v1.0
+
+Cloning into 'git-url'...
+remote: Counting objects: 144, done.
+remote: Compressing objects: 100% (111/111), done.
+remote: Total 144 (delta 71), reused 102 (delta 32), pack-reused 0
+Receiving objects: 100% (144/144), 116.43 KiB | 125.00 KiB/s, done.
+Resolving deltas: 100% (71/71), done.
+
+Checking out revision/reference v1.0... OK
+HEAD is at: 5d10a204, created directory git-url
 ```
 
 
