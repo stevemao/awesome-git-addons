@@ -24,6 +24,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Cal](#git-cal)
 - [Git Hooks](#git-hooks)
 - [Git Imerge](#git-imerge)
+- [Git Issue](#git-issue)
 - [Git Large File Storage](#git-lfs)
 - [Git Now](#git-now)
 - [Git Plus](#git-plus)
@@ -896,6 +897,216 @@ $ git imerge remove
 ```
 $ git imerge reparent
 67ebc0e6517ac791de6699453b71d2c7fd81ffcd
+```
+
+
+## [git-issue](https://github.com/dspinellis/git-issue)
+
+### Initialize issue repository
+
+```
+$ git issue init
+Initialized empty Issues repository in /home/dds/src/gi/.issues
+$ git issue new -s 'New issue entered from the command line'
+Added issue e6a95c9
+```
+
+### Create a new issue (opens editor window)
+
+```
+$ git issue new
+Added issue 7dfa5b7
+```
+
+### List open issues
+
+```
+$ git issue list
+7dfa5b7 An issue entered from the editor
+e6a95c9 New issue entered from the command line
+```
+
+### Add an issue comment (opens editor window)
+
+```
+$ git issue comment e6a95c9
+Added comment 8c0d5b3
+```
+
+### Add tag to an issue
+
+```
+$ git issue tag e6a9 urgent
+Added tag urgent
+```
+
+### Add two more tags
+
+```
+$ git issue tag e6a9 gui crash
+Added tag gui
+Added tag crash
+```
+
+### Remove a tag
+
+```
+$ git issue tag -r e6a9 urgent
+Removed tag urgent
+```
+
+### Assign issue
+
+```
+$ git issue assign e6a9 joe@example.com
+Assigned to joe@example.com
+```
+
+### Add issue watcher
+
+```
+$ git issue watcher e6a9 jane@example.com
+Added watcher jane@example.com
+```
+
+### List issues tagged as gui
+
+```
+$ git issue list gui
+e6a95c9 New issue entered from the command line
+```
+
+### Push issues repository to a server
+
+```
+$ git issue git remote add origin git@github.com:dspinellis/gi-example.git
+$ git issue git push -u origin master
+Counting objects: 60, done.
+Compressing objects: 100% (50/50), done.
+Writing objects: 100% (60/60), 5.35 KiB | 0 bytes/s, done.
+Total 60 (delta 8), reused 0 (delta 0)
+To git@github.com:dspinellis/gi-example.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+```
+
+### Clone issues repository from server
+
+```
+$ git issue clone git@github.com:dspinellis/gi-example.git my-issues
+Cloning into '.issues'...
+remote: Counting objects: 60, done.
+remote: Compressing objects: 100% (42/42), done.
+remote: Total 60 (delta 8), reused 60 (delta 8), pack-reused 0
+Receiving objects: 100% (60/60), 5.35 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (8/8), done.
+Checking connectivity... done.
+Cloned git@github.com:dspinellis/gi-example.git into my-issues
+```
+
+### List open issues
+
+```
+$ git issue list
+7dfa5b7 An issue entered from the editor
+e6a95c9 New issue entered from the command line
+```
+
+### Create new issue
+
+```
+$ git issue new -s 'Issue added on another host'
+Added issue abc9adc
+```
+
+### Push changes to server
+
+```
+$ git issue push
+Counting objects: 7, done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 767 bytes | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To git@github.com:dspinellis/gi-example.git
+   d6be890..740f9a0  master -> master
+```
+
+### Show issue added on the other host
+
+```
+$ git issue show 7dfa5b7
+issue 7dfa5b7f4591ecaa8323716f229b84ad40f5275b
+Author: Diomidis Spinellis <dds@aueb.gr>
+Date:   Fri, 29 Jan 2016 01:03:24 +0200
+Tags:   open
+
+    An issue entered from the editor
+
+    Here is a longer description.
+```
+
+### Show issue and comments
+
+```
+$ git issue show -c e6a95c9
+issue e6a95c91b31ded8fc229a41cc4bd7d281ce6e0f1
+Author: Diomidis Spinellis <dds@aueb.gr>
+Date:   Fri, 29 Jan 2016 01:03:20 +0200
+Tags:   open urgent gui crash
+Watchers:       jane@example.com
+Assigned-to: joe@example.com
+
+    New issue entered from the command line
+
+comment 8c0d5b3d77bf93b937cb11038b129f927d49e34a
+Author: Diomidis Spinellis <dds@aueb.gr>
+Date:   Fri, 29 Jan 2016 01:03:57 +0200
+
+    First comment regarding the issue.
+```
+
+### Pull in remote changes (on the original host)
+
+```
+$ git issue pull
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From github.com:dspinellis/gi-example
+   d6be890..740f9a0  master     -> origin/master
+Updating d6be890..740f9a0
+Fast-forward
+ issues/ab/c9adc61025a3cb73b0c67470b65cefc133a8d0/description | 1 +
+ issues/ab/c9adc61025a3cb73b0c67470b65cefc133a8d0/tags        | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 issues/ab/c9adc61025a3cb73b0c67470b65cefc133a8d0/description
+ create mode 100644 issues/ab/c9adc61025a3cb73b0c67470b65cefc133a8d0/tags
+```
+
+### List open issues
+
+```
+$ git issue list
+7dfa5b7 An issue entered from the editor
+abc9adc Issue added on another host
+e6a95c9 New issue entered from the command line
+```
+
+### Sub-command auto-completion
+
+```
+$ git issue [Tab]
+assign   clone    comment  git      init     log      pull     show     watcher
+attach   close    edit     help     list     new      push     tag
+```
+
+### Issue Sha auto-completion
+
+```
+$ git issue show [Tab]
+7dfa5b7 - An issue entered from the editor
+e6a95c9 - New issue entered from the command line
 ```
 
 
