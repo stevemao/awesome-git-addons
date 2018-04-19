@@ -1735,8 +1735,6 @@ Mounting readnly filesystem on ./git/fs
 
 ## [git-url](https://github.com/zdharma/git-url)
 
-[Screenshot](https://raw.githubusercontent.com/zdharma/git-url/images/git-url.png)
-
 ### git url
 
 ```
