@@ -47,7 +47,6 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-recent](#git-recent)
 - [git-fiddle](#git-fiddle)
 - [git-user](#git-user)
-- [git-cleanup-branch](#git-cleanup-branch)
 - [gitsome](#gitsome)
 - [Git Hound](#git-hound)
 - [git-recall](#git-recall)
@@ -1646,11 +1645,6 @@ Saved Profiles:
   home: Edward Hyde <hyde@night.com>
   work: Dr. Henry Jekyll <henry@jekyll.com>
 ```
-
-
-## [git-cleanup-branch](https://github.com/ne-sachirou/git-cleanup-branch)
-
-![git-cleanup-branch](https://raw.githubusercontent.com/ne-sachirou/git-cleanup-branch/master/demo.gif)
 
 
 ## [gitsome](https://github.com/donnemartin/gitsome)
