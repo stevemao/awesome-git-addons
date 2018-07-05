@@ -43,6 +43,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Diff So Fancy](#diff-so-fancy)
 - [Git Stats](#git-stats)
 - [Git Secret](#git-secret)
+- [Git Secrets](#git-secrets)
 - [git-fixup](#git-fixup)
 - [git-recent](#git-recent)
 - [git-fiddle](#git-fiddle)
@@ -1559,6 +1560,13 @@ gpg: gpg-agent is not available in this session
 File `hideme.txt' exists. Overwrite? (y/N) y
 done. all 1 files are revealed.
 ```
+
+
+## [git-secrets](https://github.com/awslabs/git-secrets)
+
+> Prevents you from committing passwords and other sensitive information to a git repository.
+
+TBD
 
 
 ## [git-fixup](https://github.com/keis/git-fixup)
