@@ -5,7 +5,7 @@ Please ensure your pull request adheres to the following guidelines:
 - Search previous suggestions before making a new one, as yours may be a duplicate.
 - Suggested packages should be tested and documented.
 - Make an individual pull request for each suggestion.
-- Use the following format: 
+- Use the following format:
 
 ```md
     ## [package](link)
@@ -17,6 +17,12 @@ Please ensure your pull request adheres to the following guidelines:
     What happens
     ```
 ```
+
+**NOTE:** You *could* include a screenshot, a short description or whatever you like if:
+1. It simply makes it a lot easier for the readers to understand.
+1. It is hard to reproduce the command (EG: must follow sequences).
+1. The output of the command is not self-explanatory of what it's doing.
+1. Any other good reasons.
 
 - Additions should be added to the bottom of the relevant category.
 - New categories, or improvements to the existing categorization are welcome.
