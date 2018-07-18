@@ -22,7 +22,7 @@ Please ensure your pull request adheres to the following guidelines:
 1. It simply makes it a lot easier for the readers to understand.
 1. It is hard to reproduce the command (EG: must follow sequences).
 1. The output of the command is not self-explanatory of what it's doing.
-1. Any other good reasons.
+1. Any other good reasons (must be written in the PR).
 
 - Additions should be added to the bottom of the relevant category.
 - New categories, or improvements to the existing categorization are welcome.
