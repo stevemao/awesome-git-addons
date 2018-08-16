@@ -46,6 +46,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Secrets](#git-secrets)
 - [git-fixup](#git-fixup)
 - [git-recent](#git-recent)
+- [git-interactive-rebase-tool](#git-recent)
 - [git-fiddle](#git-fiddle)
 - [git-user](#git-user)
 - [gitsome](#gitsome)
@@ -1594,6 +1595,13 @@ $ git recent
 
 ![git-recent screenshot](https://cloud.githubusercontent.com/assets/39191/17446638/039d4cee-5aff-11e6-9e11-4294f0020513.png)
 
+## [git-interactive-rebase-tool](https://github.com/MitMaro/git-interactive-rebase-tool)
+
+```
+$ git rebase -i master
+```
+
+![git-interactive-rebase-tool screenshot](https://raw.githubusercontent.com/MitMaro/git-interactive-rebase-tool/master/git-interactive-tool.gif)
 
 ## [git-fiddle](https://github.com/felixSchl/git-fiddle)
 
