@@ -46,7 +46,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Secrets](#git-secrets)
 - [git-fixup](#git-fixup)
 - [git-recent](#git-recent)
-- [git-interactive-rebase-tool](#git-recent)
+- [git-interactive-rebase-tool](#git-interactive-rebase-tool)
 - [git-fiddle](#git-fiddle)
 - [git-user](#git-user)
 - [gitsome](#gitsome)
