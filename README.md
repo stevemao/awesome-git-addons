@@ -740,6 +740,46 @@ $ git ci-status
 success
 ```
 
+### extras
+
+#### git alias for both `git checkout` and `hub pr checkout` simultaneously
+
+```bash
+$ git config --global alias.co '!f() {
+gitMessage="$(git checkout $@ 2>&1)"
+if [ $? == 0 ]
+then
+  if [ -n "$gitMessage" ]
+  then echo "$gitMessage"
+  fi
+else
+  hubMessage="$(hub pr checkout $@ 2>&1)"
+  if [ $? != 0 ]
+  then echo "$gitMessage"
+  fi
+  echo "$hubMessage"
+fi
+}; f'
+
+# Example: check out a branch
+$ git co master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+# Example: check out a new branch
+$ git co -b new-branch-name
+Switched to a new branch 'new-branch-name'
+
+# Example: check out a PR number
+$ git co 1337
+Switched to a new branch 'pr-1337-branch-name'
+Branch 'pr-1337-branch-name' set up to track remote branch 'pr-1337-branch-name' from 'origin'.
+
+# Example: check out a PR number in a new branch
+$ git co 1337 new-branch-name
+Switched to a new branch 'new-branch-name'
+Branch 'new-branch-name' set up to track remote branch 'pr-1337-branch-name' from 'origin'.
+```
 
 ## [git-deploy](https://github.com/mislav/git-deploy)
 
