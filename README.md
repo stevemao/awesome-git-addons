@@ -1802,11 +1802,10 @@ Checking out revision/reference v1.0... OK
 HEAD is at: 5d10a204, created directory git-url
 ```
 
+
 ## [git-signatures](https://github.com/hashbang/git-signatures)
 
-Adds handling of multiple signatures to git commits.
-
-### Add a signature to a tag and push it
+### signatures add --push
 
 ```
 $ git signatures add --push v1.0.0
@@ -1822,17 +1821,15 @@ To git@github.com:jsmith/test-signatures
  + 4de5afd...5b1f2cd v1.0.0 -> v1.0.0 (forced update)
 ```
 
-### Verify signatures on a tag
 
-No news is good news.
+### signatures verify
 
 ```
 $ git signatures verify v1.0.0
 ```
 
-### Verify signatures, requiring at least 2
 
-An error is shown if something is wrong.
+### signatures verify --min-count 2
 
 ```
 $ git signatures verify --min-count 2 v1.0.0
@@ -1846,7 +1843,8 @@ For detailed signature status run:
 > git signatures show
 ```
 
-### Show signatures on a tag
+
+### signatures show
 
 ```
 $ git signatures show v1.0.0
