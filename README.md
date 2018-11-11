@@ -57,6 +57,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-fresh](#git-fresh)
 - [git-fs](#git-fs)
 - [Git Url](#git-url)
+- [Git Signatures](#git-signatures)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1800,6 +1801,57 @@ Resolving deltas: 100% (71/71), done.
 Checking out revision/reference v1.0... OK
 HEAD is at: 5d10a204, created directory git-url
 ```
+
+
+## [git-signatures](https://github.com/hashbang/git-signatures)
+
+### signatures add --push
+
+```
+$ git signatures add --push v1.0.0
+Updated tag 'v1.0.0' (was 4de5afd)
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 906 bytes | 906.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@github.com:jsmith/test-signatures
+   4b5300d..5b1f2cd  refs/notes/signatures -> refs/notes/signatures
+ + 4de5afd...5b1f2cd v1.0.0 -> v1.0.0 (forced update)
+```
+
+
+### signatures verify
+
+```
+$ git signatures verify v1.0.0
+```
+
+
+### signatures verify --min-count 2
+
+```
+$ git signatures verify --min-count 2 v1.0.0
+Failed to find enough verifed signatures to satisfy: min_count=2
+
+Signature verification could fail simply because your local gnupg
+keychain and trustdb does not contain the required keys.
+
+For detailed signature status run:
+
+> git signatures show
+```
+
+
+### signatures show
+
+```
+$ git signatures show v1.0.0
+ Public Key ID    | Status     | Trust     | Date                         | Signer Name
+=======================================================================================================================
+01234567890ABCDEF | VALIDSIG   | ULTIMATE  | Sat Nov 10 13:16:10 EST 2018 | Steve Mao <maochenyan@gmail.com>
+ ```
 
 
 ## License
