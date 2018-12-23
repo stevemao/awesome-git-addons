@@ -1737,8 +1737,6 @@ TBD
 
 ## [git-fs](https://github.com/freddi301/git-fs)
 
-### command
-
 ```
 $ git fs
 Mounting readnly filesystem on ./git/fs
