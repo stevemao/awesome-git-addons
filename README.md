@@ -1739,7 +1739,7 @@ TBD
 
 ```
 $ git fs
-Mounting readnly filesystem on ./git/fs
+Mounting readonly filesystem on ./git/fs
 ```
 
 ## [git-url](https://github.com/zdharma/git-url)
@@ -1831,7 +1831,7 @@ $ git signatures verify v1.0.0
 
 ```
 $ git signatures verify --min-count 2 v1.0.0
-Failed to find enough verifed signatures to satisfy: min_count=2
+Failed to find enough verified signatures to satisfy: min_count=2
 
 Signature verification could fail simply because your local gnupg
 keychain and trustdb does not contain the required keys.
