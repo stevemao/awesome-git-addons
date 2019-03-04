@@ -37,6 +37,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git My](#git-my)
 - [Git Ink](#git-ink)
 - [Recursive Blame](#recursive-blame)
+- [Git Hyper Blame](#hyper-blame)
 - [Git Fire](#git-fire)
 - [Git Town](#git-town)
 - [Git blame-someone-else](#git-blame-someone-else)
@@ -1463,6 +1464,21 @@ Match:  1 of 1
 6)   "homepage": "https://github.com/angular/angular",
 7)   "bugs": "https://github.com/angular/angular/issues",
 ```
+
+
+## [hyper-blame](https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/git-hyper-blame.html)
+
+
+```
+$ git hyper-blame -i 3ddda43c ipsum.txt
+c6eb3bfa (lorem 2014-08-11 23:15:57 +0000  1) LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+134200d1 (lorem 2014-04-10 08:54:46 +0000 2*) ADIPISCING ELIT, SED DO EIUSMOD TEMPOR
+a34a1d0d (ipsum 2014-04-11 11:25:04 +0000 3*) INCIDIDUNT UT LABORE ET DOLORE MAGNA
+134200d1 (lorem 2014-04-10 08:54:46 +0000 4*) ALIQUA. UT ENIM AD MINIM VENIAM, QUIS
+c6eb3bfa (lorem 2014-08-11 23:15:57 +0000  5) NOSTRUD EXERCITATION ULLAMCO LABORIS
+0f0d17bd (dolor 2014-06-02 11:31:48 +0000 6*) NISI UT ALIQUIP EX EA COMMODO CONSEQUAT.
+```
+
 
 
 ## [git-fire](https://github.com/qw3rtman/git-fire)
