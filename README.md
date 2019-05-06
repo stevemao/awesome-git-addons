@@ -38,6 +38,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Ink](#git-ink)
 - [Recursive Blame](#recursive-blame)
 - [Git Hyper Blame](#hyper-blame)
+- [Git Word Blame](#git-word-blame)
 - [Git Fire](#git-fire)
 - [Git Town](#git-town)
 - [Git blame-someone-else](#git-blame-someone-else)
@@ -1478,6 +1479,22 @@ a34a1d0d (ipsum 2014-04-11 11:25:04 +0000 3*) INCIDIDUNT UT LABORE ET DOLORE MAG
 c6eb3bfa (lorem 2014-08-11 23:15:57 +0000  5) NOSTRUD EXERCITATION ULLAMCO LABORIS
 0f0d17bd (dolor 2014-06-02 11:31:48 +0000 6*) NISI UT ALIQUIP EX EA COMMODO CONSEQUAT.
 ```
+
+
+## [git-word-blame](https://framagit.org/mdamien/git-word-blame)
+
+
+```
+$ git word-blame README.md
+results in /tmp/word-blame-output/
+ - author_stats.tsv
+ - commit_stats.tsv
+ - word-blame-by-commit.html
+ - word-blame-by-author.html
+ - text-output
+```
+
+![git word-blame on this README](https://user-images.githubusercontent.com/1469823/57202569-0247eb00-6fa7-11e9-8549-f55d81299fab.png)
 
 
 
