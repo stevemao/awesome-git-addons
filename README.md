@@ -1635,7 +1635,7 @@ $ git recent
 $ git rebase -i master
 ```
 
-![git-interactive-rebase-tool screenshot](https://raw.githubusercontent.com/MitMaro/git-interactive-rebase-tool/master/git-interactive-tool.gif)
+![git-interactive-rebase-tool screenshot](https://raw.githubusercontent.com/MitMaro/git-interactive-rebase-tool/master/docs/assets/images/git-interactive-rebase-demo.gif)
 
 ## [git-fiddle](https://github.com/felixSchl/git-fiddle)
 
