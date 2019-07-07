@@ -1902,7 +1902,7 @@ Profile home added successfully
 # list out our saved profiles
 $ git profile list
 Existing profiles:
-dm3ch
+work
 home
 
 # set the current git repository user to the home profile
