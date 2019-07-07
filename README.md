@@ -60,6 +60,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-fs](#git-fs)
 - [Git Url](#git-url)
 - [Git Signatures](#git-signatures)
+- [Git Profile](#git-profile)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1884,6 +1885,29 @@ $ git signatures show v1.0.0
 01234567890ABCDEF | VALIDSIG   | ULTIMATE  | Sat Nov 10 13:16:10 EST 2018 | Steve Mao <maochenyan@gmail.com>
  ```
 
+## [git-profile](https://github.com/dm3ch/git-profile-manager)
+
+```
+# add a work profile
+$ git profile add work
+Name: Name Surname
+Email: name@work-domain.com
+Signing Key:
+Profile work added successfully
+
+# add a personal profile
+$ git profile add home -n "Name Surname" -e name@gmail.com
+Profile home added successfully
+
+# list out our saved profiles
+$ git profile list
+Existing profiles:
+dm3ch
+home
+
+# set the current git repository user to the home profile
+$ git profile use work
+# Currently there will be no output in case of success
 
 ## License
 
