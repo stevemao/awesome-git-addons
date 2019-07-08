@@ -1886,31 +1886,31 @@ $ git signatures show v1.0.0
  ```
 
 ## [git-profile](https://github.com/dm3ch/git-profile-manager)
-
-```
 # add a work profile
+```
 $ git profile add work
 Name: Name Surname
 Email: name@work-domain.com
 Signing Key:
 Profile work added successfully
+```
 
 # add a personal profile
+```
 $ git profile add home -n "Name Surname" -e name@gmail.com
 Profile home added successfully
+```
 
 # list out our saved profiles
+```
 $ git profile list
 Existing profiles:
 work
 home
+```
 
 # set the current git repository user to the home profile
+```
 $ git profile use work
-# Currently there will be no output in case of success
-
-## License
-
-[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Steve Mao](https://github.com/stevemao) has waived all copyright and related or neighboring rights to this work.
+```
+Currently there will be no output in case of success
