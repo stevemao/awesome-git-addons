@@ -1914,3 +1914,6 @@ home
 $ git profile use work
 ```
 Currently there will be no output in case of success
+
+# License
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dm3ch/git-profile-manager/blob/master/LICENSE)
