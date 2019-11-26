@@ -62,6 +62,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Signatures](#git-signatures)
 - [Git Profile](#git-profile)
 - [git revise](#git-revise)
+- [filter-repo](#filter-repo)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1917,6 +1918,10 @@ $ git profile use work
 Currently there will be no output in case of success
 
 ## [git-revise](https://github.com/mystor/git-revise)
+
+TBD - PR Welcome!
+
+## [filter-repo](https://github.com/newren/git-filter-repo)
 
 TBD - PR Welcome!
 
