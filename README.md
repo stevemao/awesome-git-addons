@@ -63,6 +63,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Profile](#git-profile)
 - [git revise](#git-revise)
 - [filter-repo](#filter-repo)
+- [git-exfiltrate](#git-exfiltrate)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1858,6 +1859,14 @@ home
 $ git profile use work
 ```
 Currently there will be no output in case of success
+
+## [git-exfiltrate](https://github.com/Incognito/git-exfiltrator)
+### Break apart large branches into smaller ones
+```
+git exfiltrate master feature-branch "b/*"
+# feature-branch-extracted is created and contains only changes 
+# from the "b" folder
+```
 
 ## [git-revise](https://github.com/mystor/git-revise)
 
