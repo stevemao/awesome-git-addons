@@ -1867,6 +1867,12 @@ TBD - PR Welcome!
 
 TBD - PR Welcome!
 
+## [git-jump](https://github.com/mykolaharmash/git-jump)
+
+Interactive UI and fuzzy-search for Git branches.
+
+![git-jump interface demo](https://raw.githubusercontent.com/mykolaharmash/git-jump/main/img/demo.gif)
+
 
 ## License
 
