@@ -63,6 +63,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Profile](#git-profile)
 - [git revise](#git-revise)
 - [filter-repo](#filter-repo)
+- [git-project](#git-project)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1866,6 +1867,35 @@ TBD - PR Welcome!
 ## [filter-repo](https://github.com/newren/git-filter-repo)
 
 TBD - PR Welcome!
+
+## [git-project](https://github.com/mms-gianni/git-projecto)
+```
+$ git project board  
+
+ Project: shoppinglist 
++-----------+------+
+|   OPEN    | DONE |
++-----------+------+
+| something | love |
++-----------+------+
+| coffee    |      |
++-----------+      +
+| sugar     |      |
++-----------+      +
+| milk      |      |
++-----------+------+
+```
+
+```
+$ git project status
+
+Project: shoppinglist
+  0|  ⭐  something
+  1|  ⭐  coffee
+  2|  ⭐  sugar
+  3|  ⭐  milk
+  4|  ✅  love
+```
 
 
 ## License
