@@ -1870,7 +1870,13 @@ TBD - PR Welcome!
 
 ## [git-project](https://github.com/mms-gianni/git-projecto)
 ```
-$ git project board  
+git project open shoppinglist
+```
+```
+git project add shoppinglist milk
+```
+```
+$ git project board
 
  Project: shoppinglist 
 +-----------+------+
