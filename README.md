@@ -1861,6 +1861,14 @@ $ git profile use work
 ```
 Currently there will be no output in case of success
 
+## [git-revise](https://github.com/mystor/git-revise)
+
+TBD - PR Welcome!
+
+## [filter-repo](https://github.com/newren/git-filter-repo)
+
+TBD - PR Welcome!
+
 ## [git-branchcut](https://github.com/dlsrb6342/git-branchcut)
 ### Delete branches with string pattern 
 ```
@@ -1877,16 +1885,6 @@ Switched to branch 'main'
 Deleted branch bugfix/test (was e2afad6).
 Deleted branch too-old-branch (was 1d3f82d).
 ```
-
-## [git-revise](https://github.com/mystor/git-revise)
-
-TBD - PR Welcome!
-
-## [filter-repo](https://github.com/newren/git-filter-repo)
-
-TBD - PR Welcome!
-
-
 
 ## License
 
