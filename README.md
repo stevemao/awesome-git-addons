@@ -64,6 +64,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git revise](#git-revise)
 - [filter-repo](#filter-repo)
 - [git-project](#git-project)
+- [git-branchcut](#git-branchcut)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1903,6 +1904,22 @@ Project: shoppinglist
   4|  ✅  love
 ```
 
+## [git-branchcut](https://github.com/dlsrb6342/git-branchcut)
+### Delete branches with string pattern 
+```
+$ git branchcut execute -p "feature/*"
+Switched to branch 'main'
+Deleted branch feature/test (was 257725f).
+Deleted branch feature/impl (was 8120c0b).
+```
+
+### Delete branches with day-offset
+```
+$ git branchcut execute -o 7
+Switched to branch 'main'
+Deleted branch bugfix/test (was e2afad6).
+Deleted branch too-old-branch (was 1d3f82d).
+```
 
 ## License
 
