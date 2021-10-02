@@ -765,7 +765,7 @@ $ git push production master
 ![68747470733a2f2f7261772e6769746875622e636f6d2f6b34727468696b2f6769742d63616c2f6d61737465722f73637265656e73686f74732f696d67322e706e67](https://cloud.githubusercontent.com/assets/6316590/12465623/17d828ea-c023-11e5-8077-2e9a284defd6.png)
 
 
-## [git-hooks](https://github.com/icefox/git-hooks)
+## [git-hooks](https://github.com/git-hooks/git-hooks)
 
 ```
 $ git hooks --install
