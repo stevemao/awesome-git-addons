@@ -63,6 +63,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Profile](#git-profile)
 - [git revise](#git-revise)
 - [filter-repo](#filter-repo)
+- [git-jump](#git-jump)
 - [git-project](#git-project)
 - [git-branchcut](#git-branchcut)
 
@@ -1868,6 +1869,12 @@ TBD - PR Welcome!
 ## [filter-repo](https://github.com/newren/git-filter-repo)
 
 TBD - PR Welcome!
+
+## [git-jump](https://github.com/mykolaharmash/git-jump)
+
+Interactive UI and fuzzy-search for Git branches.
+
+![git-jump interface demo](https://raw.githubusercontent.com/mykolaharmash/git-jump/main/img/demo.gif)
 
 ## [git-project](https://github.com/mms-gianni/git-projecto)
 ```
