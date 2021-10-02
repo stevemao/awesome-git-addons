@@ -63,6 +63,9 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Profile](#git-profile)
 - [git revise](#git-revise)
 - [filter-repo](#filter-repo)
+- [git-jump](#git-jump)
+- [git-project](#git-project)
+- [git-branchcut](#git-branchcut)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1873,6 +1876,57 @@ Interactive UI and fuzzy-search for Git branches.
 
 ![git-jump interface demo](https://raw.githubusercontent.com/mykolaharmash/git-jump/main/img/demo.gif)
 
+## [git-project](https://github.com/mms-gianni/git-projecto)
+```
+git project open shoppinglist
+```
+```
+git project add shoppinglist milk
+```
+```
+$ git project board
+
+ Project: shoppinglist 
++-----------+------+
+|   OPEN    | DONE |
++-----------+------+
+| something | love |
++-----------+------+
+| coffee    |      |
++-----------+      +
+| sugar     |      |
++-----------+      +
+| milk      |      |
++-----------+------+
+```
+
+```
+$ git project status
+
+Project: shoppinglist
+  0|  ⭐  something
+  1|  ⭐  coffee
+  2|  ⭐  sugar
+  3|  ⭐  milk
+  4|  ✅  love
+```
+
+## [git-branchcut](https://github.com/dlsrb6342/git-branchcut)
+### Delete branches with string pattern 
+```
+$ git branchcut execute -p "feature/*"
+Switched to branch 'main'
+Deleted branch feature/test (was 257725f).
+Deleted branch feature/impl (was 8120c0b).
+```
+
+### Delete branches with day-offset
+```
+$ git branchcut execute -o 7
+Switched to branch 'main'
+Deleted branch bugfix/test (was e2afad6).
+Deleted branch too-old-branch (was 1d3f82d).
+```
 
 ## License
 
