@@ -55,6 +55,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Hound](#git-hound)
 - [git-recall](#git-recall)
 - [git-standup](#git-standup)
+- [git-scrum](#git-scrum)
 - [Commitizen](#commitizen)
 - [git-fresh](#git-fresh)
 - [git-fs](#git-fs)
@@ -1690,6 +1691,9 @@ a1097116 - add versioning to readme (14 hours ago) <Steve Mao>
 6b6e7465 - add test coverage (15 hours ago) <Steve Mao>
 ```
 
+## [git-scrum](https://github.com/LukeGarrigan/git-scrum)
+
+![https://user-images.githubusercontent.com/12545967/96227261-cc74a780-0f8b-11eb-9372-62aec3b789c4.gif](https://user-images.githubusercontent.com/12545967/96227261-cc74a780-0f8b-11eb-9372-62aec3b789c4.gif)
 
 ## [commitizen](https://github.com/commitizen/cz-cli)
 
