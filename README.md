@@ -67,6 +67,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-project](#git-project)
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
+- [git-spend](#git-spend)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1466,10 +1467,89 @@ Leave building!
 ```
 
 
-## [git-town](https://github.com/Originate/git-town)
+## [Git Town](https://github.com/git-town/git-town)
 
-TBD - PR Welcome!
+### git hack
 
+```
+$ git hack my-branch
+[main] git fetch --prune --tags
+
+[main] git rebase origin/main
+
+[main] git branch my-branch main
+
+[main] git checkout my-branch
+```
+
+### git sync
+
+```
+$ git sync
+[my-branch] git fetch --prune --tags
+
+[my-branch] git checkout main
+
+[main] git rebase origin/main
+
+[main] git checkout my-branch
+
+[my-branch] git merge --no-edit main
+
+[my-branch] git push -u origin my-branch
+ * [new branch]      my-branch -> my-branch
+Branch 'my-branch' set up to track remote branch 'my-branch' from 'origin'.
+```
+
+### git new-pull-request
+
+```
+$ git new-pull-request
+[my-branch] git fetch --prune --tags
+
+[my-branch] git checkout main
+
+[main] git rebase origin/main
+
+[main] git checkout my-branch
+
+[my-branch] git merge --no-edit origin/my-branch
+
+[my-branch] git merge --no-edit main
+
+open <url to create pull request for current branch>
+```
+
+### git ship
+
+```
+[my-branch] git fetch --prune --tags
+
+[my-branch] git checkout main
+
+[main] git rebase origin/main
+
+[main] git checkout my-branch
+
+[my-branch] git merge --no-edit origin/my-branch
+
+[my-branch] git merge --no-edit main
+
+[my-branch] git checkout main
+
+[main] git merge --squash my-branch
+
+[main] git commit
+ 1 file changed, 2 insertions(+)
+
+[main] git push
+
+[main] git push origin :my-branch
+ - [deleted]         my-branch
+
+[main] git branch -D my-branch
+Deleted branch my-branch (was 55cb0f7).
+```
 
 ## [git-blame-someone-else](https://github.com/jayphelps/git-blame-someone-else)
 
@@ -1764,7 +1844,7 @@ File:      lib/common.sh
 
 https://github.com/zdharma/git-url
 ```
- 
+
 ### git guclone
 
 ```
@@ -1887,7 +1967,7 @@ git project add shoppinglist milk
 ```
 $ git project board
 
- Project: shoppinglist 
+ Project: shoppinglist
 +-----------+------+
 |   OPEN    | DONE |
 +-----------+------+
@@ -1913,7 +1993,7 @@ Project: shoppinglist
 ```
 
 ## [git-branchcut](https://github.com/dlsrb6342/git-branchcut)
-### Delete branches with string pattern 
+### Delete branches with string pattern
 ```
 $ git branchcut execute -p "feature/*"
 Switched to branch 'main'
@@ -1928,7 +2008,6 @@ Switched to branch 'main'
 Deleted branch bugfix/test (was e2afad6).
 Deleted branch too-old-branch (was 1d3f82d).
 ```
-
 
 ## [git-exfiltrate](https://github.com/Incognito/git-exfiltrator)
 ### Break apart large branches into smaller ones
@@ -1965,6 +2044,23 @@ The `feature-branch-extracted` branch will be created with just the contents of
 * 927799f
 * 219e9b2
 ```
+
+## [git-spend](https://github.com/Goutte/git-spend)
+
+Collect and sum the `/spend <duration>` directives found in commit messages.
+
+```
+$ git spend sum
+3 weeks 2 days 1 hour 37 minutes
+```
+
+### Filter by author, range, and more
+
+```
+$ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
+1 week 3 hours
+```
+
 
 ## License
 
