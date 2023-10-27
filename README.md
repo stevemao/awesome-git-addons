@@ -66,6 +66,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-jump](#git-jump)
 - [git-project](#git-project)
 - [git-branchcut](#git-branchcut)
+- [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
 
 
@@ -2006,6 +2007,42 @@ $ git branchcut execute -o 7
 Switched to branch 'main'
 Deleted branch bugfix/test (was e2afad6).
 Deleted branch too-old-branch (was 1d3f82d).
+```
+
+## [git-exfiltrate](https://github.com/Incognito/git-exfiltrator)
+### Break apart large branches into smaller ones
+
+Assume a hypothetical project where you make changes to two software component
+folders in one feature-branch, you can use this tool to make that two branches
+with a preserved history for both.
+
+```
+git checkout feature-branch
+./git-exfiltrate master feature-branch-extracted "component-folder/*"
+```
+
+The `feature-branch-extracted` branch will be created with just the contents of
+`component-folder` from the feature-branch changes.
+
+```
+*   e01009e  (main)
+|
+| * ce4ca64  (feature-branch-extracted)
+| |  component-folder/1 | 20 +
+| * f3bf092
+| |  component-folder/1 | 20 +
+* | 4b2ebd6
+|/
+|
+| * d4c374e  (feature-branch)
+| |  component-folder/1 | 20 +
+| |  different-component-folder/2 | 100 -
+| * 4724dbb
+| |  component-folder/1 | 20 +
+| |  different-component-folder/2 | 100 -
+|/
+* 927799f
+* 219e9b2
 ```
 
 ## [git-spend](https://github.com/Goutte/git-spend)
