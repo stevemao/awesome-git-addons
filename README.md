@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [git-x](#git-x)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2059,6 +2060,93 @@ $ git spend sum
 ```
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
+```
+
+
+## [git-x](https://github.com/simeg/git-x)
+
+### Repository Health Check
+
+```
+$ git x health
+
+🔍 Repository Health Check:
+✅ Git configuration looks good
+✅ Remote repositories configured
+⚠️  Working directory has uncommitted changes
+✅ No security risks detected
+⚠️  Large binary files detected: image.png (2.5MB)
+```
+
+### Analyze Technical Debt
+
+```
+$ git x technical-debt
+
+🔍 Technical Debt Analysis
+
+📊 Large Commits (>20 files changed)
+   ✓ No large commits found
+
+🔥 File Hotspots (frequently modified)
+   1. 15 changes | HIGH | src/main.rs
+   2. 8 changes | MED | src/lib.rs
+   3. 6 changes | LOW | README.md
+
+🌿 Long-lived Branches (>30 days)
+   • feature/old-refactor | 3 months ago | Alice Smith
+   • hotfix/legacy-fix | 6 weeks ago | Bob Jones
+
+🔄 Code Churn (high add/delete ratio)
+   1. +245 -189 | HIGH | src/parser.rs
+   2. +156 -98 | MED | src/utils.rs
+
+📦 Binary Files in Repository
+   ! 3 binary files found
+   • assets/logo.png
+   • docs/manual.pdf
+   ...
+
+Analysis complete!
+```
+
+### Interactive Branch switching
+
+```
+$ git x switch-recent
+
+? Select a branch to switch to:
+  🌟 feature/new-ui (2 days ago)
+  📁 bugfix/memory-leak (1 week ago)
+  📁 master (2 weeks ago)
+  📁 develop (1 month ago)
+```
+
+### Interactive Stash Management
+
+```
+$ git x stash-branch interactive
+
+? Select a stash to manage:
+  🌟 stash@{0}: WIP: user authentication (feature/auth)
+  📁 stash@{1}: fix styling issues (bugfix/css)
+  📁 stash@{2}: add tests (master)
+
+? What would you like to do?
+  🌟 Apply selected stash
+  📁 Delete selected stash
+  📁 Create branch from stash
+  📁 Show stash diff
+  📁 Export to patch file
+```
+
+### Clean Merged Branches
+
+```
+$ git x clean-branches
+🧹 Deleted branch feature/completed (was a1b2c3d).
+🧹 Deleted branch hotfix/old-fix (was e4f5g6h).
+✅ 2 branches deleted
 ```
 
 
