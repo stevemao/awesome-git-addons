@@ -68,7 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
-
+- [git-cl](#git-cl)
 
 ## [git-extras](https://github.com/tj/git-extras)
 
@@ -2061,6 +2061,64 @@ $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1
 1 week 3 hours
 ```
 
+## [git-cl](https://github.com/BHFock/git-cl)
+
+Manage changelists (named groups of files) before staging or committing. Organise work by intent, stage partial commits, and create branches from changelists.
+
+### add
+
+```
+$ git cl add bugfix src/fix.py tests/test_fix.py
+Added to 'bugfix': ['src/fix.py', 'tests/test_fix.py']
+```
+
+### status
+
+```
+$ git cl status
+bugfix:
+  [ M] src/fix.py
+  [A ] tests/test_fix.py
+
+docs:
+  [ M] README.md
+  [ M] docs/tutorial.md
+
+No Changelist:
+  [??] scratch.py
+```
+
+### commit
+
+```
+$ git cl commit bugfix -m "Fix null pointer exception"
+Committed tracked files from changelist 'bugfix':
+  src/fix.py
+  tests/test_fix.py
+Deleted changelist 'bugfix'
+```
+
+### stash
+
+```
+$ git cl stash my-feature
+Successfully stashed changelist 'my-feature' from branch 'main'
+Stashed 3 file(s):
+  2 with unstaged changes
+  1 newly added
+Working directory is now clean for this changelist
+```
+
+### branch
+
+```
+$ git cl branch feature-a
+Creating branch 'feature-a' with changelist 'feature-a'
+Stashing 2 active changelists...
+Switched to new branch 'feature-a'
+Restored changelist 'feature-a' (3 files)
+Ready to work on your feature!
+```
 
 ## License
 
