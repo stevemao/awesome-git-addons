@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [Git Native Issue](#git-native-issue)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2059,6 +2060,62 @@ $ git spend sum
 ```
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
+```
+
+
+## [git-native-issue](https://github.com/remenoscodes/git-native-issue)
+
+### Create a new issue
+
+```
+$ git issue create "Fix login crash" -l bug -p critical
+Created issue a7f3b2c
+```
+
+### List open issues
+
+```
+$ git issue ls
+a7f3b2c [open]  Fix login crash                       bug critical
+b3e9d1a [open]  Add dark mode support                  feature
+```
+
+### Show issue details
+
+```
+$ git issue show a7f3b2c
+issue a7f3b2c
+
+  Fix login crash
+
+  State:    open
+  Priority: critical
+  Labels:   bug
+  Author:   Dev User <dev@example.com>
+  Date:     Wed, 19 Feb 2026 10:30:00 +0000
+```
+
+### Add a comment
+
+```
+$ git issue comment a7f3b2c -m "Reproduced on iOS 18. Stack trace attached."
+Added comment to a7f3b2c
+```
+
+### Close an issue
+
+```
+$ git issue state a7f3b2c --close -m "Fixed in commit 4e2f891"
+Closed issue a7f3b2c
+```
+
+### Sync with GitHub
+
+```
+$ git issue import github:owner/repo
+Imported 12 issues from github:owner/repo
+$ git issue export github:owner/repo
+Exported 3 issues to github:owner/repo
 ```
 
 
