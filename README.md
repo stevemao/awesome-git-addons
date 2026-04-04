@@ -57,6 +57,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-standup](#git-standup)
 - [Commitizen](#commitizen)
 - [git-fresh](#git-fresh)
+- [gitty](#gitty)
 - [git-fs](#git-fs)
 - [Git Url](#git-url)
 - [Git Signatures](#git-signatures)
@@ -1796,6 +1797,30 @@ Line 1 will be cropped at 100 characters. All other lines will be wrapped after 
 ## [git-fresh](https://github.com/imsky/git-fresh)
 
 TBD - PR Welcome!
+В основной список между секциями git-fresh и git-fs:
+## [gitty](https://github.com/Omibranch/gitty)
+
+### Stage, commit, and push in one command
+$ gitty up
+[SUCCESS] Staged, committed and pushed to main
+
+### Commit only specific lines of a file
+$ gitty pick main.go 10-20
+[SUCCESS] Lines 10–20 committed. Full file intact locally.
+
+### Interactive conflict resolution
+$ gitty fix app.py
+Conflict in app.py (1 of 2):
+[1] Keep mine
+[2] Take theirs
+[3] Merge both
+
+[SUCCESS] Conflict resolved and staged.
+
+
+### Remove a file from all past commits
+$ gitty erase secrets.env
+[SUCCESS] secrets.env removed from all history.
 
 ## [git-fs](https://github.com/freddi301/git-fs)
 
