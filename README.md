@@ -67,6 +67,9 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-project](#git-project)
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
+- [gitcommitgen](#gitcommitgen)
+- [gitprgen](#gitprgen)
+- [gitprune](#gitprune)
 - [git-spend](#git-spend)
 
 
@@ -2059,6 +2062,37 @@ $ git spend sum
 ```
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
+```
+
+## [gitcommitgen](https://github.com/BenihDev/gitcommitgen)
+
+Generate conventional commit messages with AI.
+
+```
+$ npx @fanioz/gitcommitgen
+Analyzing staged changes...
+feat: add user authentication module
+```
+
+## [gitprgen](https://github.com/BenihDev/gitprgen)
+
+Generate PR descriptions from git diffs with AI.
+
+```
+$ npx gitprgen
+Analyzing diff...
+Generated PR description for #42
+```
+
+## [gitprune](https://github.com/BenihDev/gitprune)
+
+Safely delete merged and stale git branches.
+
+```
+$ npx gitprune
+Found 3 merged branches
+Delete feature/login? [y/N]: y
+Deleted branch feature/login
 ```
 
 
