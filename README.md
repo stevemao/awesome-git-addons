@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [gitcommitgen](#gitcommitgen)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2059,6 +2060,20 @@ $ git spend sum
 ```
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
+```
+
+
+## [gitcommitgen](https://github.com/BenihDev/gitcommitgen)
+
+AI-powered conventional commit message generator. Analyzes staged git changes and generates clean, structured commit messages following the conventional commits spec.
+
+```
+$ gitcommitgen
+feat: add user authentication with JWT tokens
+
+$ gitcommitgen --commit --edit
+feat: implement pagination for user list endpoint
+ [master abc1234] feat: implement pagination for user list endpoint
 ```
 
 
