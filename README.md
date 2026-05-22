@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [gitpulse](#gitpulse)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2061,6 +2062,22 @@ $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1
 1 week 3 hours
 ```
 
+
+
+## [gitpulse](https://github.com/milishiajay/gitpulse)
+
+Git productivity CLI — commit stats, author leaderboard, activity sparklines.
+
+```
+$ gitpulse stats
+Total commits: 1,432
+Active days : 89
+Longest streak: 12 days
+
+Author Leaderboard:
+  alice     ████████████████████ 487 (34.0%)
+  bob       ██████████ 241 (16.8%)
+```
 
 ## License
 
