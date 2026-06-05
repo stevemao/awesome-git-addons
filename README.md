@@ -51,6 +51,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-interactive-rebase-tool](#git-interactive-rebase-tool)
 - [git-fiddle](#git-fiddle)
 - [git-user](#git-user)
+- [gity](#gity)
 - [gitsome](#gitsome)
 - [Git Hound](#git-hound)
 - [git-recall](#git-recall)
@@ -1724,6 +1725,35 @@ Saved Profiles:
   home: Edward Hyde <hyde@night.com>
   work: Dr. Henry Jekyll <henry@jekyll.com>
 ```
+
+
+## [gity](https://github.com/neul-labs/gity)
+
+A cross-platform background daemon that makes Git fast on large repositories. Implements the Git `fsmonitor` v2 protocol, watches the working tree with native OS file watchers (inotify / FSEvents / ReadDirectoryChangesW), and serves `git status` from cache. Once registered, `git status` in a million-file repo returns in milliseconds.
+
+### register
+
+```
+$ gity register /path/to/large-repo
+Registered /path/to/large-repo. Watching with inotify. fsmonitor configured.
+```
+
+### status
+
+```
+$ gity status /path/to/large-repo
+Repo: /path/to/large-repo  Watcher: inotify  Cache: warm  Tracked: 1,243,007  Pending: 0
+```
+
+### list
+
+```
+$ gity list
+/path/to/repo-a  Watcher: fsevents  Cache: warm  Tracked: 1,243,007
+/path/to/repo-b  Watcher: inotify    Cache: cold  Tracked:    8,192
+```
+
+Git itself then invokes `gity fsmonitor-helper` automatically once `core.fsmonitor` is configured by `gity register`, accelerating `git status`, `git diff`, and `git add` in any registered repo.
 
 
 ## [gitsome](https://github.com/donnemartin/gitsome)
