@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [Alpheon](#alpheon)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2061,6 +2062,16 @@ $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1
 1 week 3 hours
 ```
 
+
+## [Alpheon](https://github.com/BravoAlphaSix/alpheon)
+
+Reads a `git diff` and drafts a reviewable HANDOFF.md that records what changed and the reasoning behind it, so the intent behind a commit is not lost when you come back to the code later. Zero dependencies, single file.
+
+```
+$ python alpheon.py
+Reading staged diff...
+Draft handoff note written. Review and confirm to append to HANDOFF.md.
+```
 
 ## License
 
