@@ -16,6 +16,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
 ## Table of Contents
 
+- [ai-commit-pro](#ai-commit-pro)
 - [Git Extras](#git-extras)
 - [Git Flow](#gitflow-avh-edition)
 - [Git Up](#git-up)
@@ -2061,6 +2062,9 @@ $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1
 1 week 3 hours
 ```
 
+## [ai-commit-pro](https://github.com/ikedalef/ai-commit-tool)
+
+> Auto-generate conventional git commit messages using edge LLMs.
 
 ## License
 
