@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [subcommit](#subcommit)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2060,6 +2061,22 @@ $ git spend sum
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
 ```
+
+## [subcommit](https://github.com/reemus-dev/subcommit)
+
+Commit explicit files or current line ranges while preserving unrelated staged, unstaged, and untracked changes.
+
+### Commit a selected line
+
+```
+$ git subcommit app.txt:10 -m "Commit selected line" --yes --quiet
+$ git show --stat --oneline HEAD
+b9dab88 Commit selected line
+ app.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+Only changes touching line 10 are committed. Other index and worktree changes remain intact.
 
 
 ## License
