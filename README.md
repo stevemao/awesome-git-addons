@@ -69,6 +69,14 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
 
+### ai-commit-pro-cli
+
+> Zero-install CLI generating conventional commits and PR summaries via edge AI.
+
+```sh
+$ npx ai-commit-pro-cli
+```
+* [ai-commit-pro-cli](https://github.com/ikedalef/ai-commit-tool)
 
 ## [git-extras](https://github.com/tj/git-extras)
 
