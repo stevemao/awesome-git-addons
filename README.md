@@ -16,6 +16,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 
 ## Table of Contents
 
+- [ai-commit-pro](#ai-commit-pro)
 - [Git Extras](#git-extras)
 - [Git Flow](#gitflow-avh-edition)
 - [Git Up](#git-up)
@@ -69,6 +70,15 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
 
+## [ai-commit-pro](https://github.com/ikedalef/ai-commit-pro)
+
+```bash
+$ npx @lifeef/ai-commit-pro
+```
+
+Automate Conventional Commits from Git diffs via ephemeral Edge AI with zero setup and zero data retention.
+
+---
 
 ## [git-extras](https://github.com/tj/git-extras)
 
