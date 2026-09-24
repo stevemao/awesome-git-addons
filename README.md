@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [pygitgo](#pygitgo)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2060,6 +2061,93 @@ $ git spend sum
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
 ```
+
+
+## [pygitgo](https://github.com/Huerte/GitGo)
+
+### gitgo
+
+```
+$ gitgo
+✔ Checking repository...
+╭────────────────────────────────────────────────────────────────────╮
+│                            GitGo 1.10.4                            │
+│                      Your Fast Git Companion                       │
+╰────────────────────────────────────────────────────────────────────╯
+
+  Identity  Huerte <huertejerald@gmail.com>
+  Remote    https://github.com/Huerte/awesome-git-addons.git
+  Branch    master
+  Sync      up to date
+  Status    clean
+  Latest    [a054ac3] Update README.md (#42) (1 year, 11 months ago) by Steve Mao
+
+  PyPI      pypi.org/project/pygitgo
+  GitHub    github.com/Huerte/GitGo
+  Sponsor   github.com/sponsors/Huerte
+
+  Run `gitgo --help` to see available commands.
+```
+
+Shows your repo identity, sync state, and latest commit at a glance.
+
+### push
+
+```
+$ gitgo push
+✔ Checking repository...
+No branch given. Using: 'feature/login'
+No commit message given. Using: 'chore: new changes applied'
+✔ Files staged.
+✔ Changes committed.
+✔ Pushed to remote branch 'feature/login'.
+
+╭────────────────────────────────────────────────────────────────────╮
+│        MISSION COMPLETE. ALL TARGETS COMMITTED AND PUSHED.         │
+│              REMOTE TARGETS ALIGNED WITH LOCAL EDITS.              │
+╰────────────────────────────────────────────────────────────────────╯
+
+Run 'gitgo undo push' to revert this push if it was unintended.
+```
+
+### jump
+
+```
+$ gitgo jump feat/new-login
+✔ Checking for local changes...
+✔ Auto-saving local changes before switching...
+✔ Switching to 'feat/new-login'...
+✔ Syncing 'feat/new-login' with latest from 'main'...
+'feat/new-login' synced with latest commits from 'main'.
+✔ Restoring your local changes...
+╭────────────────────────────────────────────────────────────────────╮
+│          WORKSPACE RE-POSITIONED. TARGET DEPLOYMENT SECURED.       │
+│               ON TARGET BRANCH WITH RE-APPLIED STATE.              │
+╰────────────────────────────────────────────────────────────────────╯
+```
+
+Stashes, switches branch, pulls, then re-applies your work. On conflict, prompts to abort and revert the switch.
+
+### undo push
+
+```
+$ gitgo undo push
+✔ Checking repository...
+DANGER: This will remove your last upload from GitHub using a force-push.
+WARNING: If anyone else already downloaded that commit, this will cause problems for them.
+WARNING: Only continue if you are the only person working on this branch.
+DANGER: Remove the last push from GitHub? Type 'y' to confirm: y
+✔ Last commit reverted locally.
+✔ Last push reverted. Remote 'add-pygitgo' is back to the previous commit.
+Your files are still staged locally. Edit and push again when ready.
+
+╭────────────────────────────────────────────────────────────────────╮
+│                ACTION ROLLBACK. WORKSPACE RESTORED.                │
+│            PREVIOUS STATE RE-ESTABLISHED SUCCESSFULLY.             │
+╰────────────────────────────────────────────────────────────────────╯
+```
+
+Reverts the last push with a force-push. Prompts for confirmation first.
 
 
 ## License
