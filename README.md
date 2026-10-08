@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [git-barber](#git-barber)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2061,6 +2062,24 @@ $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1
 1 week 3 hours
 ```
 
+
+## [git-barber](https://github.com/rekurt/git-barber)
+
+Review and remove merged Git branches, including squash and rebase merges, from a terminal interface.
+
+### List branch candidates
+
+```
+$ git barber --list --no-cache
+base: main
+  squash-merged  squash    1h ago
+  gone-upstream  gone      1h ago  ↑ origin/gone-upstream (gone)
+
+2 candidate(s), 1 selected by default. Run `git barber` for the TUI or `git barber --yes` to delete.
+tip: gone branches are never deleted without explicit consent (--include-gone or a manual TUI check).
+```
+
+This example uses an isolated repository with a squash-merged branch and two unmerged branches. The branch with a missing upstream is listed as `gone` and is not selected by default; a missing upstream does not prove a merge. `--list --no-cache` prints candidates without deleting branches or writing the verdict cache.
 
 ## License
 
