@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [git-nested](#git-nested)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2059,6 +2060,40 @@ $ git spend sum
 ```
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
+```
+
+
+## [git-nested](https://github.com/thorsten-klein/git-nested)
+
+Nest multiple git repositories into one monorepo, while still being able to pull and push changes per repository.
+An alternative to git-submodule, git-subtree and git-subrepo.
+
+### clone
+
+```
+$ git nested clone https://github.com/user/lib ext/lib
+ext/lib: cloned from https://github.com/user/lib (main)
+```
+
+### pull
+
+```
+$ git nested pull ext/lib
+ext/lib: pulled from https://github.com/user/lib (main)
+```
+
+### push
+
+```
+$ git nested push ext/lib
+ext/lib: pushed to https://github.com/user/lib (app-main)
+```
+
+### status
+
+```
+$ git nested status --short
+ext/lib 0 0 same
 ```
 
 
