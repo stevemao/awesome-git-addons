@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [todo-age](#todo-age)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2059,6 +2060,18 @@ $ git spend sum
 ```
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
+```
+
+## [todo-age](https://github.com/nicoleyangcoding/todo-age)
+
+List every TODO, FIXME and HACK in a repository, oldest first, dated with `git blame`.
+
+```
+$ todo-age --limit 3
+AGE   AUTHOR  LOCATION                   TEXT
+4.2y  Dana    src/billing/refunds.py:88  TODO: handle partial refunds
+3.1y  Lee     api/routes.js:201          FIXME race condition when two saves overlap
+2.7y  Dana    src/billing/tax.py:14      HACK: hardcoded rate until the tax API is ready
 ```
 
 
