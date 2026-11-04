@@ -68,6 +68,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [git-branchcut](#git-branchcut)
 - [git-exfiltrate](#git-exfiltrate)
 - [git-spend](#git-spend)
+- [git-remote-htree](#git-remote-htree)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -2060,6 +2061,23 @@ $ git spend sum
 $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1.0.0
 1 week 3 hours
 ```
+
+
+## [git-remote-htree](https://github.com/mmalmi/hashtree/tree/master/rust/crates/git-remote-htree)
+
+Clone, fetch, and push Git repositories through Hashtree content storage and Nostr-signed repository references.
+
+### clone and fetch
+
+After installing the `git-remote-htree` helper, Git handles `htree://` remotes directly:
+
+```sh
+$ git clone htree://npub1xdhnr9mrv47kkrn95k6cwecearydeh8e895990n3acntwvmgk2dsdeeycm/hashtree
+$ cd hashtree
+$ git fetch origin
+```
+
+[Installation and first-push guide](https://git.iris.to/quickstart.html).
 
 
 ## License
