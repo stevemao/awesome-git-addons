@@ -2062,6 +2062,15 @@ $ git spend sum --author stevemao --author antoine@goutenoir.com --since tags/v1
 ```
 
 
+## [Git-Chronos](https://github.com/KokosP/git-chronos)
+
+Derives billable hours and earnings from local commit history — no timers, fully offline. Groups commits into work sessions, attributes time to tasks via commit prefixes, and renders a terminal dashboard or a styled Excel invoice.
+
+```
+$ git-chronos analyze .
+|  Total due: 8.2 h x $25.00 = $206.25
+```
+
 ## License
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
